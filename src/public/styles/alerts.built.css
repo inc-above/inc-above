@@ -1,0 +1,29 @@
+.alert-danger
+{
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    font-size: 15px;
+    position: relative;
+    text-align: left;
+    color: #ff1d1d;
+}
+
+.alert-list
+{
+    padding: .5rem 1rem;
+}
+
+.close-icon-alert
+{
+    background: url('/images/icons/close.svg') center no-repeat;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 1rem;
+    margin-top: .7rem;
+}
+

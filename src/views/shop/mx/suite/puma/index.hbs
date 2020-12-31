@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{> head }}
+
+</head>
+<body>
+
+    
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                {{> shop/menus/tabnav }}
+
+                <section class="hero-initial wrapper-initial-section-none">
+                    <a href="/shop/suite/apple/iphone/iphone-12" class="cta-link-section">
+                        <video class="wrapper-video-initial" loading="lazy" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                            <source src="/videos/puma-future-agility-redefined.mp4" type="video/mp4" loading="lazy">
+                        </video>
+                        <div class="container-blur">
+                            <div class="square-blur-info">
+                                <div class="blur-large-section-info blur-black">
+                                    <div class="title-left-top">
+                                        <h2 class="title-sub-heading">
+                                            Puma
+                                        </h2>
+                                        <h4 class="title-description">Agilidad, movimiento, nosotros.</h4>
+                                    </div>
+                                    <div class="title-left-bottom-absolute">
+                                        <h4 class="title-description">Descubre y <br> compra Puma aqui.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <button onclick="play()" class="play-button-initial" id="buttonVideoplay"><figure class="play-icon-initial"></figure></button>
+                    <button onclick="pause()" class="pause-button-initial" id="buttonVideopause"><figure class="pause-icon-initial"></figure></button>
+                </section>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="-headline-wrap-item">
+                            <div class="title-left">
+                                <h2 class="title-heading-extra-minus">
+                                    Todo sobre Puma
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers  margin-right">
+                        <a href="/shop/suite/nike/jordan/psg" class="cta-link-section">
+                            <div class="wrapper-column-row">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers wrapper-column-row">
+                        <a href="" class="cta-link-section">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+
+                </div>
+
+                <div class="column-row-wrapper-section">
+                    
+                    <section class="hero-wrappers  margin-right">
+                        <a href="" class="cta-link-section">
+                            <div class="wrapper-column-row">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers wrapper-column-row">
+                        <a href="" class="cta-link-section">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+
+                </div>
+
+            </div>
+        </div>        
+    </div>
+
+    <script> 
+        var video = document.getElementById("videoPlayer");
+        function play() { 
+            video.play(); 
+            document.getElementById("buttonVideoplay").style.display = "none";
+            document.getElementById("buttonVideopause").style.display = "block"; 
+        }
+
+        function pause() { 
+            video.pause(); 
+            document.getElementById("buttonVideoplay").style.display = "block";
+            document.getElementById("buttonVideopause").style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        var video = document.getElementById('videoPlayer'); video.control = false;
+    </script>
+
+    
+</body>
+</html>

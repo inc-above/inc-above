@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{> head }}
+
+</head>
+<body>
+
+    
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebarsearch }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                {{> shop/menus/tabnav }}
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="-headline-wrap-item">
+                            <div class="title-left">
+                                <h2 class="title-heading-extra-minus">
+                                    Categorias más buscadas
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="hero-butter-max">
+                    <div class="butter-row-columns">
+                        <a class="butter-small-over butter-small-electronic">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Electronicos
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="butter-small-over butter-small-fashion">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Moda
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="butter-small-over butter-small-home">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Hogar
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="butter-small-over butter-small-electrodomestics">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Electrodomésticos
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="butter-small-over butter-small-books">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Libros
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/shop/suite/dune-market" class="butter-small-over butter-small-supermarket">
+                            <div class="container-butter">
+                                <div class="title-left-bottom-absolute">
+                                    <h2 class="title-sub-heading-minus">
+                                        Supermercado
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="-headline-wrap-item">
+                            <div class="title-left">
+                                <h2 class="title-heading-extra-minus">
+                                    Categorias más buscadas
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>        
+    </main>
+
+    <script> 
+        var video = document.getElementById("videoPlayer");
+        function play() { 
+            video.play(); 
+            document.getElementById("buttonVideoplay").style.display = "none";
+            document.getElementById("buttonVideopause").style.display = "block"; 
+        }
+
+        function pause() { 
+            video.pause(); 
+            document.getElementById("buttonVideoplay").style.display = "block";
+            document.getElementById("buttonVideopause").style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        var video = document.getElementById('videoPlayer'); video.control = false;
+    </script>
+
+    
+</body>
+</html>

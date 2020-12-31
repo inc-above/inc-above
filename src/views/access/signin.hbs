@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{{ title }}}</title>
+    <link rel="stylesheet" href="/styles/main.built.css">
+    <link rel="stylesheet" href="/styles/globalfooter.built.css">
+    <link rel="stylesheet" href="/styles/globalheader.built.css">
+    <link rel="stylesheet" href="/styles/fonts.built.css">
+
+</head>
+<body>
+
+    {{> navigation }}
+
+    <section class="hero-basic wrapper-intro-index">
+        <div class="tile-squared">
+            <div class="container-wrap">
+                <div class="title-center-medium">
+                    <div class="title-heading-extra-minus">
+                        Iniciar sesión
+                    </div>
+                </div>
+                <div class="access-form">
+                    <input type="text" class="global-input-access" placeholder="Above ID">
+                    <input type="password" class="global-input-access" placeholder="Contraseña">
+                </div>
+                <div class="cta-center">
+                    <a href="/access/signin" class="cta-link-square-blue">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{> footer }}
+
+</body>    
+</html>

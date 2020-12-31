@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{{ title }}}</title>
+    <link rel="stylesheet" href="/styles/main.built.css">
+    <link rel="stylesheet" href="/styles/globalfooter.built.css">
+    <link rel="stylesheet" href="/styles/globalheader.built.css">
+    <link rel="stylesheet" href="/styles/fonts.built.css">
+    <link rel="stylesheet" href="/styles/alerts.built.css">
+
+</head>
+<body>
+
+    {{> navigation }}
+
+    
+
+    <section class="hero wrapper-intro-index">
+        <div class="tile-squared">
+            <div class="container-wrap">
+                <form action="" method="POST" id="form">
+                    <div class="title-center-top">
+                        <h2 class="title-heading-minus">
+                            Crear Above ID
+                        </h2>
+                        <h2 class="title-sub-heading-minus">
+                            Tu Above ID te servirá para poder acceder a los productos y servicios de Above. <a href="" class="cta-link-blue-auto">Ya tengo cuenta</a>
+                        </h2>
+                    </div>
+                    <div class="border-top-global"></div>
+                    <div class="access-form">
+                        <ul class="access-form-list">
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger {{> labelError }}" placeholder="Nombre(s)" name="name" id="name" value="{{name}}" autofocus>
+                                {{> errors }}
+                                
+                            </li>
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger" placeholder="Apellidos" name="lastname" id="lastname" value="{{lastname}}">
+                                {{> errors }}
+                            </li>
+                            <li class="access-form-item">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">Fecha de nacimiento</h3>
+                                </div>
+                                <input type="date" class="global-input-access-bigger" placeholder="Fecha de nacimiento" name="birthday" id="birthday" value="{{birthday}}">
+                            </li>
+                            <li class="access-form-item">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">Género</h3>
+                                </div>
+                                <select name="gender" id="gender" class="global-select-form-bigger">
+                                    <option value="">Femenino</option>
+                                    <option value="">Masculino</option>
+                                </select>
+                            </li>
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger" placeholder="Ocupación" name="job" id="job" value="{{job}}">
+                            </li>
+
+                            <div class="border-top-global"></div>
+
+                            <li class="access-form-item">
+                                <input type="email" class="global-input-access-bigger" placeholder="Correo electrónico" name="email" id="email" value="{{email}}">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">Este será tu nuevo Above ID</h3>
+                                </div>
+                            </li>
+                            <li class="access-form-item">
+                                <input type="email" class="global-input-access-bigger" placeholder="Correo electrónico secundario (opcional)" name="email_second" value="{{email_second}}">
+                            </li>
+                            <li class="access-form-item">
+                                <select name="phone_region" id="" class="global-select-form-bigger">
+                                    <option value="">+52 (México)</option>
+                                </select>
+                            </li>
+                            <li class="access-form-item">
+                                <input type="number" class="global-input-access-bigger" placeholder="Número de celular" name="phone" id="phone" value="{{phone}}">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">Ingresa correctamente tu número de celular ya que enviaremos un mensaje para confirmar tu identidad. Podrían aplicarse tarifas de datos o mensajería.</h3>
+                                </div>
+                            </li>
+                            <li class="access-form-item">
+                                <input type="number" class="global-input-access-bigger" placeholder="Número fijo" name="phonestatic" id="phonestatic" value="{{phonestatic}}">
+                            </li>
+                            
+                            <div class="border-top-global"></div>
+
+                            <li class="access-form-item">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">País o región</h3>
+                                </div>
+                                <select name="country" id="country" class="global-select-form-bigger">
+                                    <option value="">México</option>
+                                </select>
+                            </li>
+                            <li class="access-form-item">
+                                <div class="title-left">
+                                    <h3 class="title-sub-heading-extra-minus gray-text">Estado o provincia</h3>
+                                </div>
+                                <select name="state" id="state" class="global-select-form-bigger">
+                                    <option value="">Aguascalientes</option>
+                                    <option value="">Baja California</option>
+                                    <option value="">Baja California Sur</option>
+                                    <option value="">Campeche</option>
+                                    <option value="">Chiapas</option>
+                                    <option value="">Campeche</option>
+                                    <option value="">Chihuahua</option>
+                                    <option value="">Ciudad de México</option>
+                                    <option value="">Coahuila</option>
+                                    <option value="">Colima</option>
+                                    <option value="">Durango</option>
+                                    <option value="">Guanajuato</option>
+                                    <option value="">Guerrero</option>
+                                    <option value="">Hidalgo</option>
+                                    <option value="">Jalisco</option>
+                                    <option value="">México</option>
+                                    <option value="">Michoacán</option>
+                                    <option value="">Morelos</option>
+                                    <option value="">Nayarit</option>
+                                    <option value="">Nuevo León</option>
+                                    <option value="">Oaxaca</option>
+                                    <option value="">Puebla</option>
+                                    <option value="">Querétaro</option>
+                                    <option value="">Quintana Roo</option>
+                                    <option value="">San Luis Potosí</option>
+                                    <option value="">Sinaloa</option>
+                                    <option value="">Sonora</option>
+                                    <option value="">Tabasco</option>
+                                    <option value="">Tamaulipas</option>
+                                    <option value="">Tlaxcala</option>
+                                    <option value="">Veracruz</option>
+                                    <option value="">Yucatán</option>
+                                    <option value="">Zacatecas</option>
+                                </select>
+                            </li>
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger" placeholder="Ciudad" name="city" id="city" value="{{city}}">
+                            </li>
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger" placeholder="Domicilio" name="domicile" id="domicile" value="{{domicile}}">
+                            </li>
+                            <li class="access-form-item">
+                                <input type="text" class="global-input-access-bigger" placeholder="Código postal" name="zipcode" id="zipcode" value="{{zipcode}}">
+                            </li>
+
+                            <div class="border-top-global"></div>
+
+                            <li class="access-form-item">
+                                <input type="password" class="global-input-access-bigger" placeholder="Contraseña" name="password" id="password" value="{{password}}">
+                                
+                            </li>
+                            <li class="access-form-item">
+                                <input type="password" class="global-input-access-bigger" placeholder="Confirmar contraseña" name="confirm_password" id="confirm_password" value="{{confirm_password}}">
+                                
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="cta-center">
+                        <button type="submit" class="cta-link-square-blue">Continuar</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
+
+    
+
+    {{> footer }}
+
+
+</body>    
+</html>

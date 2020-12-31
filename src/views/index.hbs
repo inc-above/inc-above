@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{{ title }}}</title>
+    <link rel="stylesheet" href="/styles/main.built.css">
+    <link rel="stylesheet" href="/styles/globalfooter.built.css">
+    <link rel="stylesheet" href="/styles/globalheader.built.css">
+    <link rel="stylesheet" href="/styles/fonts.built.css">
+
+</head>
+<body>
+
+    {{> navigation }}
+
+    <section class="hero-basic wrapper-intro-index">
+        <div class="tile-squared">
+            <div class="container-wrap">
+                <div class="title-center-medium">
+                    <img src="/images/icons/sho-logo.png" alt="" class="icon-continental-index">
+                    <div class="title-heading-extra-minus">
+                        Bienvenido a {{{ title }}}
+                    </div>
+                    <div class="title-sub-heading-extra-minus">
+                        Inicia sesión o crea un Above ID para poder acceder.
+                    </div>
+                    <div class="cta-center">
+                        <a href="/access/signin" class="cta-link-square-blue">Inciar sesión</a>
+                        <a href="/access/signup" class="cta-link-outline-blue">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{> footer }}
+    
+</body>
+</html>
+

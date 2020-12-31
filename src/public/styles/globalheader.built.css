@@ -1,0 +1,31 @@
+.container-header
+{
+    max-width: 128rem;
+    padding: 0 2.2rem;
+    margin: 0 auto;
+}
+
+.header-nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.4rem;
+    z-index: 900;
+    width: 100%;
+}
+
+.header-nav-list
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.title-header-nav
+{
+    color: #ffffff;
+    font-size: 17px;
+}
+

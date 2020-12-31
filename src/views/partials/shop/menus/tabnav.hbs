@@ -1,0 +1,22 @@
+<div class="navFix">
+    <div class="container-header">
+        <ul class="navFix-box-list">
+            <li class="navFix-box-item">
+
+            </li>
+            <li class="navFix-box-item">
+                <h3 class="title-navfix">{{image}} {{title}}</h3>
+            </li>
+            <li class="navFix-box-item">
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var navFix = document.querySelector(".navFix");
+        navFix.classList.toggle("fixedNav", window.scrollY > 0)
+    });
+</script>

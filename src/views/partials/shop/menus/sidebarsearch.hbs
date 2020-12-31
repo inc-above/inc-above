@@ -1,0 +1,44 @@
+<div class="section-side-bar grey-side-bar">
+    <div class="container">
+        <ul class="side-list side-list-larger">
+            <li class="circus-side">
+                <figure class="duneberry-icon-sidebar"></figure>
+            </li>
+            <li class="side-item side-item-search">
+                <form onSubmit="return handleSearch()">
+                    <div class="search-box search-box-larger">
+                        <span class="icon-search"></span>
+                        <input type="text" class="search-input" placeholder="Buscar" autofocus>
+                    </div>
+                </form>
+            </li>
+            <li class="side-item">
+                <figure class="side-icon discover-icon"></figure><a class="side-link explore-link" href="/shop/discover">Descubrir</a>
+            </li>
+            <li class="side-item">
+                <figure class="side-icon sell-icon"></figure><a class="side-link create-link" href="/shop/sell">Vender</a>
+            </li>
+            
+            <li class="side-item">
+                <figure class="side-icon arcade-icon"></figure><a href="/shop/arcade" class="side-link adquired">Arcade</a>
+            </li>
+            <li class="side-item">
+                <figure class="side-icon sales-icon"></figure><a href="/shop/sales" class="side-link calc">Ofertas</a>
+            </li>
+            <li class="side-item">
+                <figure class="side-icon category-icon"></figure><a class="side-link create-link" href="/shop/categories">Categorias</a>
+            </li>
+            <li class="side-item">
+                <figure class="side-icon star-icon"></figure><a href="/shop/favorites" class="side-link calc">Favoritos</a>
+            </li>
+            <li class="profile-item grid-item-profile">
+                <a href="/shop/account" class="link-menu-non">
+                    <span class="profile-image circle-avatar">
+                        <img src="/images/icons/avatar-non-profile.svg" alt="" class="avatar-img circle-img">
+                    </span>
+                    <a href="/shop/account" class="menu-link">{{user.name}}</a>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

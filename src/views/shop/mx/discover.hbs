@@ -1,0 +1,634 @@
+
+
+    <style>
+        .current-discover-item
+        {
+            background: rgba(230, 230, 231, 0.7);
+            border-radius: 5px;
+            position: relative;
+            z-index: -1;
+            width: 200px;
+            padding: 1rem 1rem;
+            margin-left: -1rem;
+            margin-top: -.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                {{> shop/menus/tabnav }}
+
+                <section class="hero-initial wrapper-initial-section-none">
+                    <a href="/shop/products/iphone-12/pantalla-6-1-pulgadas-64gb-blanco" class="cta-link-section">
+                        <video class="wrapper-video-initial" loading="lazy" poster="/images/wrappers/winter-ski_Moment.jpg" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                            <source src="/videos/iphone-12-official-commercial-ad.mp4" type="video/mp4" loading="lazy">
+                        </video>
+                        <div class="container-blur">
+                            <div class="square-blur-info">
+                                <div class="blur-large-section-info blur-white">
+                                    <div class="title-left-top">
+                                        <h2 class="title-sub-heading">
+                                            iPhone 12
+                                        </h2>
+                                        <h4 class="title-description">El iPhone <br> Súper. Mega. Rápido.</h4>
+                                    </div>
+                                    <div class="title-left-bottom-absolute">
+                                        <h4 class="title-description">Descubre y <br> compra iPhone 12 aqui.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <button onclick="soundon()" class="soundon-button-initial" id="buttonVideosoundon"><figure class="soundon-icon-initial"></figure></button>
+                    <button onclick="muted()" class="muted-button-initial" id="buttonVideomuted"><figure class="muted-icon-initial"></figure></button>
+
+                    <button onclick="play()" class="play-button-initial" id="buttonVideoplay"><figure class="play-icon-initial"></figure></button>
+                    <button onclick="pause()" class="pause-button-initial" id="buttonVideopause"><figure class="pause-icon-initial"></figure></button>
+                </section>
+
+                <script> 
+                    var video = document.getElementById("videoPlayer");
+                    function play() { 
+                        video.play(); 
+                        document.getElementById("buttonVideoplay").style.display = "none";
+                        document.getElementById("buttonVideopause").style.display = "block"; 
+                    }
+
+                    function pause() { 
+                        video.pause(); 
+                        document.getElementById("buttonVideoplay").style.display = "block";
+                        document.getElementById("buttonVideopause").style.display = "none";
+                    }
+
+                    function soundon() { 
+                        video.muted = true; 
+                        document.getElementById("buttonVideosoundon").style.display = "none";
+                        document.getElementById("buttonVideomuted").style.display = "block";
+                    }
+
+                    function muted() { 
+                        video.muted = false; 
+                        document.getElementById("buttonVideosoundon").style.display = "block";
+                        document.getElementById("buttonVideomuted").style.display = "none";
+                    }
+
+                </script>
+
+                <script>
+                    var video = document.getElementById('videoPlayer'); video.control = false;
+                </script>
+                
+                <script src="/scripts/slider-carousel.built.js"></script>
+                
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers margin-right">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-promo-ck">
+                                <div class="title-left-top-absolute-extreme title-darker">
+                                    <h2 class="title-heading-extra-minus">
+                                        Calvin Klein
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Calvin Klein
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    Para mujer y hombre
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    Frescura y estilo.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-promo-huaweip30">
+                                <div class="title-left-top-absolute-extreme title-darker">
+                                    <h2 class="title-heading-extra-minus">
+                                        Huawei
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Huawei
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    Huawei P40 Pro
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    Fotografia visionaria.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers margin-right">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-promo-harmankardon">
+                                <div class="title-left-top-absolute-extreme">
+                                    <h2 class="title-heading-extra-minus">
+                                        Harman & Kardon
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Harman & Kardon
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    AURA STUDIO 3
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-light-text">
+                                    Escucha con potencia.
+                                </h2>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-promo-spicebombvr">
+                                <div class="title-left-top-absolute-extreme">
+                                    <h2 class="title-heading-extra-minus">
+                                        Viktor & Rolf
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Viktor & Rolf
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    SPICEBOMB Collection
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    Una explosiva sensación.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+                    
+                </div>
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers margin-right">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-vote">
+                                <div class="title-left-top-absolute-extreme">
+                                    <h2 class="title-heading-extra-minus">
+                                        
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Votaciones
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    Votación de la semana
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    Realiza una votación sobre marcas y productos.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+                    <section class="hero-wrappers margin-right">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-nespresso">
+                                <div class="title-left-top-absolute-extreme">
+                                    <h2 class="title-heading-extra-minus">
+                                        Nespresso
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Ofertas Nespresso
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    ¡Cafe, cafe, cafe!
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    La mejores ofertas en cafeteras y cafe Nespresso.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+                    <section class="hero-wrappers">
+                        <a href="/shop/products" class="cta-link-section">
+                            <div class="wrapper-column-row wrapper-adidas">
+                                <div class="title-left-top-absolute-extreme">
+                                    <h2 class="title-heading-extra-minus">
+                                        
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="title-left-top title-darker">
+                                <h2 class="title-sub-heading-extra-minus blue-text">
+                                    Adidas
+                                </h2>
+                                <h2 class="title-heading-extra-minus">
+                                    Llegó lo mejor de Adidas
+                                </h2>
+                                <h2 class="title-sub-heading-minus gray-text">
+                                    Echa un ojo a lo mejor de adidas y las ofertas que traen.
+                                </h2>
+                                
+                            </div>
+                        </a>
+                    </section>
+                </div>    
+                
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="-headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Para ti
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="hero-swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--- <div class="swiper-slide swiper-slide-market">
+                                <div class="swiper-slide-footer swiper-slide-footer-darker">
+                                    <div class="container-wrap">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-extra-minus">
+                                                Haz tu supermecado
+                                            </h2>
+                                            <h3 class="title-sub-heading-extra-minus">
+                                                Una variedad de productos para ti, sin salir de casa, compra y listo.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> --->
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-playstation">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <figure class="playstation-icon-bigger"></figure>
+                                            </li>
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Playstation 5
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        La potencia en un solo lugar. <br>
+                                                        Juega sin limites.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestkeyboards">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                         
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        ¿Necesitas teclados?
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Ve la variedad de teclados para PC
+                                                        que tenemos para ti.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-samsungscreens">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <figure class="samsung-icon-bigger"></figure>
+                                            </li>
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Lo mejor en pantallas
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Samsung tiene eso para ti, con pantallas 4k.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestsmartphones">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Top 10 celulares
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Descubre los mejores celulares que existen el dia de hoy y escoge los que te gusten.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestbooks">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Lo mejor en libros del mes
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Aqui te presentamos nuestra selección de libros del mes.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-efficiency">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Aumenta tu eficiencia y eficacia
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Ve con que herramientas puedes optimizar tu trabajo o estudios.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestfashion">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Renueva tu closet
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Conoce y disfruta de estas marcas para poder renovar tu closet al mejor estilo.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestsmartwatch">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        Los mejores smartwatch
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Aqui tenemos una recopilación de los mejores smartwatch del momento.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/shop/products/playstation-5" class="swiper-slide swiper-slide-bestdrinks">
+                                <div class="swiper-slide-footer-blur swiper-slide-footer-blur-darker">
+                                    <div class="container-wrap-2">
+                                        <ul class="swiper-slide-footer-list">
+                                            <li class="swiper-slide-footer-item">
+                                                <div class="title-left">
+                                                    <h2 class="title-heading-extra-minus">
+                                                        ¿Sed?
+                                                    </h2>
+                                                    <h3 class="title-sub-heading-extra-minus">
+                                                        Te presentamos algunas bebidas que te quitaran la sed.
+                                                    </h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-button-container-left">
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-button-container-right">
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="-headline-wrap-item">
+                            <div class="title-left">
+                                <h2 class="title-heading-extra-minus">
+                                    Recomendaciones
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="butter-row-3">
+                    <div class="butter-wrap-3 lelabo-butter">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    <div class="title-left title-darker">
+                                        <h2 class="title-sub-heading-minus gray-text">
+                                            Favoritos para el cuidado
+                                        </h2>
+                                        <h2 class="title-sub-heading-minus">
+                                            <strong>Le Labo</strong> Todo para el cuidado del cuerpo.
+                                        </h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="butter-wrap-3 clean-butter">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    <div class="title-left">
+                                        <h2 class="title-sub-heading-minus gray-light-text">
+                                            Favoritos para la limpieza
+                                        </h2>
+                                        <h2 class="title-sub-heading-minus">
+                                            Limpia de virus y bacterias tu hogar y mantenlo fresco en todo momento.
+                                        </h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="butter-wrap-3 butter-wrap-3-preview">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    <div class="title-left">
+                                        <h2 class="title-sub-heading-minus gray-light-text">
+                                            Envios
+                                        </h2>
+                                        <h2 class="title-sub-heading-minus">
+                                            ¿En que parte del mundo esta nuestro servicio disponible?
+                                        </h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="preview-sheet" id="previewSheet">
+                            <div class="header-preview-sheet">
+                                <ul class="header-preview-sheet-list">
+                                    <li class="header-preview-sheet-item">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-extra-minus">
+                                                En donde podemos estar contigo
+                                            </h2>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body-preview-sheet">
+                                <ul class="body-preview-sheet-list">
+                                    <li class="body-preview-sheet-item">
+                                        
+                                        <img src="/images/wrappers/store-ubication.png" alt="" class="store-ubication-image">
+                                        <div class="title-left-top">
+                                            <h2 class="title-heading-extra-minus">
+                                                Nos encontramos solo en México
+                                            </h2>
+                                            <h3 class="title-sub-heading-minus">
+                                                Pero proximamente estaremos en muchos más paises para brindarte de la mejor experiencia y que formes parte de esta familia.
+                                            </h3>    
+                                        </div>
+                                        <img src="/images/wrappers/store-ubication.png" alt="" class="store-ubication-image">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-preview-sheet">
+                                <ul class="footer-preview-sheet-list">
+                                    <li class="footer-preview-sheet-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="butter-wrap-3">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="butter-wrap-3">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="butter-wrap-3">
+                        <div class="foot-butter">
+                            <ul class="foot-butter-list">
+                                <li class="foot-butter-item">
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 2.7,
+                        spaceBetween: 20,
+                        centeredSlides: false,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                    },
+                    });
+                </script>
+
+                <script>
+                    var swiper = new Swiper('.swiper-container2', {
+                    cssMode: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next-2',
+                        prevEl: '.swiper-button-prev-2',
+                    },
+                    mousewheel: true,
+                    keyboard: true,
+                    });
+                </script>
+
+            </div>
+        </div>        
+    </div>
+
