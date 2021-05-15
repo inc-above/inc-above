@@ -1,0 +1,688 @@
+
+
+    <style>
+        .current-shop-item
+        {
+            background: rgba(230, 230, 231, 0.7);
+            border-radius: 10px;
+            position: relative;
+            z-index: -1;
+            width: 200px;
+            padding: 1rem 1rem;
+            margin-left: -1rem;
+            margin-top: -.5rem;
+            margin-bottom: 1rem;
+        }
+        @media (prefers-color-scheme: dark) 
+        {
+            .current-shop-item
+            {
+                background: rgba(63, 63, 63, 0.4);
+            }
+        }
+    </style>
+
+    
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    {{> shop/menus/tabnav }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+
+                <div class="head-landing">
+                    <div class="head-landing-content">
+                        <ul class="head-landing-list">
+                            <li class="head-landing-item">
+                                <h2 class="head-landing-line1">
+                                    Comprar
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="butters-row-3">
+                    <div class="butters-row-3-container">
+                        <a href="/shop/mx/trend" class="butter-row-3-item">
+                            <img class="image-butter-item" src="/images/wrappers/samsung-neo.jpg" alt="">
+                            <div class="butter-bottom-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-titleup">
+                                        Samsung
+                                    </h2>
+                                    <h2 class="butter-heading-title">
+                                        Neo QLED
+                                    </h2>
+                                    <h2 class="butter-sub-title">
+                                        La grandeza no se acaba, evoluciona
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/shop/mx/trend" class="butter-row-3-item">
+                         <img class="image-butter-item" src="/images/wrappers/patagonia-winter.png" alt="">
+                            <div class="butter-bottom-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-titleup">
+                                        Patagonia
+                                    </h2>
+                                    <h2 class="butter-heading-title">
+                                        Impulsa tus limites
+                                    </h2>
+                                    <h2 class="butter-sub-title">
+                                        Lo mejor del invierno en Patagonia
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/shop/mx/trend" class="butter-row-3-item">
+                            <div class="butter-bottom-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-title1">
+                                        Tendencias
+                                    </h2>
+                                    <h2 class="butter-title2">
+                                        Productos que estan en la cima en este momento.
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Para ti
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prev1">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-listshop">
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-next1">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Lo más gustado
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prev2">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-listshop2">
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-next2">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="butters-row-2">
+                    <div class="butters-row-2-container">
+                        <a href="/shop/mx/trend" class="butter-row-2-item">
+                            <div class="butter-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-title1">
+                                        Tendencias
+                                    </h2>
+                                    <h2 class="butter-title2">
+                                        Productos que estan en la cima en este momento.
+                                    </h2>
+                                </div>
+                                <ul class="butter-list-content">
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">1</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods Pro 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">2</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">3</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">4</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">5</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="/shop/mx/trend" class="butter-row-2-item">
+                            <div class="butter-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-title1">
+                                        Recomendamos
+                                    </h2>
+                                    <h2 class="butter-title2">
+                                        Aquí te recomendamos lo mejor que hay.
+                                    </h2>
+                                </div>
+                                <ul class="butter-list-content">
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">1</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods Pro 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">2</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">3</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">4</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">5</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Super Tecnología 
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prev3">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-listshop3">
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-next3">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Mejora el día a día
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prev4">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-listshop4">
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/shop/mx/events/first-night" class="product-shelf-carousel"><img class="image-product-shelf-carousel" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/shop/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-next4">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>        
+        </div>        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.5/glider.min.js"></script>
+    <script src="/scripts/glider-slide2.js"></script>
+

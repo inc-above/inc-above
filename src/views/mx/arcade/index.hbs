@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {{> head }}
+
+</head>
+<body>
+
+    <style>
+        .current-arcade-item
+        {
+            background: rgba(230, 230, 231, 0.7);
+            border-radius: 5px;
+            position: relative;
+            z-index: -1;
+            width: 200px;
+            padding: 1rem 1rem;
+            margin-left: -1rem;
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                {{> shop/menus/tabnav }}
+
+                
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers margin-right">
+                        <a href="/shop/suite/nike/jordan/psg" class="cta-link-section">
+                            <div class="wrapper-column-row">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers wrapper-column-row">
+                        <a href="" class="cta-link-section">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="column-row-wrapper-section">
+                    <section class="hero-wrappers  margin-right">
+                        <a href="" class="cta-link-section">
+                            <div class="wrapper-column-row">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                            </div>
+                        </a>
+                    </section>
+
+                    <section class="hero-wrappers wrapper-column-row">
+                        <a href="" class="cta-link-section">
+                            <div class="container-wrapper">
+                                <div class="title-left-top">
+                                    <h2 class="title-heading-extra-minus">
+                                        JORDAN X PARIS SAINT GERMAIN
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                        centeredSlides: true,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                    },
+                    });
+                </script>
+
+            </div>
+        </div>        
+    </div>
+
+    
+
+    
+</body>
+</html>

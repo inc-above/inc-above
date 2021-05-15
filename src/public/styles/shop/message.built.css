@@ -1,0 +1,125 @@
+.massage-wrappers
+{
+	padding-left: 40rem;
+}
+
+.container-message
+{
+	max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 4.5rem;
+}
+
+.wrapper-message
+{
+    position: relative;
+    width: 100%;
+}
+
+.message-chat
+{
+    display: none;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+.message-chat-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-chat-item
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-chat-bubble-other
+{
+    color: #111111;
+    background: #E9E8EC;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 8px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 15px;
+    width: auto;
+    align-self: flex-start;
+    max-width: 50%;
+    position: relative;
+}
+
+.message-chat-bubble-you
+{
+    color: #ffffff;
+    background: #0B93F6;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 8px 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 15px;
+    align-self: flex-end;
+    max-width: 40%;
+    position: relative;
+}
+
+.message-chat-bubble-you:before, .message-chat-bubble-you:after 
+{
+    content:"";
+	position:absolute;
+    bottom:-2px;
+    height:20px;
+}
+
+.message-chat-bubble-you .last-message:before 
+{
+    right:-7px;
+    border-right:20px solid #0B93F6;
+    border-bottom-left-radius: 16px 14px;
+    -webkit-transform:translate(0, -2px);
+            transform:translate(0, -2px);
+}
+
+.message-chat-bubble-you .last-message:after 
+{
+    right:-56px;
+    width:26px;
+    background:white;
+    border-bottom-left-radius: 10px;
+    -webkit-transform:translate(-30px, -2px);
+            transform:translate(-30px, -2px);
+}
+
+@media (prefers-color-scheme: dark) 
+{
+    .message-chat-bubble-other
+    {
+        color: #ffffff;
+        background: #3D3D3D;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding: 8px 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        font-size: 15px;
+        width: auto;
+        align-self: flex-start;
+        max-width: 50%;
+        position: relative;
+    }
+}

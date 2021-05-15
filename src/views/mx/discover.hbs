@@ -1,0 +1,780 @@
+
+
+    <style>
+        .current-discover-item
+        {
+            background: rgba(230, 230, 231, 0.7);
+            border-radius: 10px;
+            position: relative;
+            z-index: -1;
+            width: 200px;
+            padding: 1rem 1rem;
+            margin-left: -1rem;
+            margin-top: -.5rem;
+            margin-bottom: 1rem;
+        }
+        @media (prefers-color-scheme: dark) 
+        {
+            .current-discover-item
+            {
+                background: rgba(63, 63, 63, 0.4);
+            }
+        }
+    </style>
+
+    
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    {{> shop/menus/tabnav }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                <section class="hero-initial wrapper-initial-section-none">
+                    <a href="/mx/product" class="cta-link-section">
+                        <video class="wrapper-video-initial" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                            <source src="/videos/iphone-12-purple.mp4" type="video/mp4" loading="lazy">
+                        </video>
+                        <div class="title-left-top-absolute">
+                            <h2 class="title-heading-minus gradient-purple-text">
+                                Descubre
+                            </h2>
+                        </div>
+                        <div class="container-blur">
+                            <div class="square-blur-info">
+                                <div class="blur-squared-medium">
+                                    <ul class="blur-squared-list">
+                                        <li class="blur-squared-item">
+                                            <div class="title-left">
+                                                <a href="/mx/suite/apple" class="title-tag blue-text">
+                                                    Apple
+                                                </a>
+                                                <h2 class="title-heading-extra-minus">
+                                                    iPhone 12 Purple
+                                                </h2>
+                                                <h3 class="title-sub-heading-minus gray-light-text">
+                                                    Un salto al siguiente nivel y ahora morado
+                                                </h3>
+                                            </div>
+                                            <div class="cta-left">
+                                                <a href="/mx/product" class="cta-link-blue-minus">Ver más <ion-icon style="margin-bottom: -.3rem;" name="ios-arrow-forward"></ion-icon></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <button onclick="soundon()" class="soundon-button-initial" id="buttonVideosoundon"><figure class="soundon-icon-initial"></figure></button>
+                    <button onclick="muted()" class="muted-button-initial" id="buttonVideomuted"><figure class="muted-icon-initial"></figure></button>
+
+                    <button onclick="play()" class="play-button-initial" id="buttonVideoplay"><figure class="play-icon-initial"></figure></button>
+                    <button onclick="pause()" class="pause-button-initial" id="buttonVideopause"><figure class="pause-icon-initial"></figure></button>
+                </section>
+
+                <script> 
+                    var video = document.getElementById("videoPlayer");
+                    function play() { 
+                        video.play(); 
+                        document.getElementById("buttonVideoplay").style.display = "none";
+                        document.getElementById("buttonVideopause").style.display = "block"; 
+                    }
+
+                    function pause() { 
+                        video.pause(); 
+                        document.getElementById("buttonVideoplay").style.display = "block";
+                        document.getElementById("buttonVideopause").style.display = "none";
+                    }
+
+                    function soundon() { 
+                        video.muted = true; 
+                        document.getElementById("buttonVideosoundon").style.display = "none";
+                        document.getElementById("buttonVideomuted").style.display = "block";
+                    }
+
+                    function muted() { 
+                        video.muted = false; 
+                        document.getElementById("buttonVideosoundon").style.display = "block";
+                        document.getElementById("buttonVideomuted").style.display = "none";
+                    }
+
+                </script>
+
+                <script>
+                    var video = document.getElementById('videoPlayer'); video.control = false;
+                </script>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prevrow2">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-listrow2">
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/section/lacoste-polaroid" class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/wrappers/lacoste-polaroid.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-big-titleup">Lacoste</h2>
+                                    <a href="/mx/section/lacoste-polaroid" class="square-shelf-carousel-big-title1">Lacoste X Polaroid</a>
+                                    <h3 class="square-shelf-carousel-big-title2">Deja que los colores entren en tu vida</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/tips/shoplist" class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/wrappers/shoplist.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-big-titleup">Tip del día</h2>
+                                    <a href="/mx/tips/shoplist" class="square-shelf-carousel-big-title1">¿Qué es una Shoplist?</a>
+                                    <h3 class="square-shelf-carousel-big-title2">Guarda productos que te gustan, comparte con los demas, funcional para eventos, fiestas y mucho más</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/whats-new/events" class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/wrappers/events.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-big-titleup">Novedad</h2>
+                                    <a href="/mx/whats-new/events" class="square-shelf-carousel-big-title1">Unete a eventos</a>
+                                    <h3 class="square-shelf-carousel-big-title2">Ofertas, promociones, productos exclusivos y lanzamientos puedes encontrar</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-nextrow2">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Descubre
+                                </h2>
+                            </div>
+                        </li>
+
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <a href="/mx/discover/more" class="cta-link-blue">Ver más</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="records-wrapper">
+                    <div class="records-wrapper-container">
+                        <ul class="records-wrapper-list">
+                            <li class="records-wrapper-item">
+                                <div class="records-header-wrapper">
+                                    <div class="records-header-wrapper-list">
+                                        <div class="records-header-wrapper-item">
+                                            <div class="profile-box-records-wrapper">
+                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                            </div>
+                                            <div class="title-left title-darker">
+                                                <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
+                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                </a>
+                                                <a href="/mx/product" class="title1-records-header-wrapper">
+                                                    AirTag
+                                                </a>
+                                                <h3 class="title2-records-header-wrapper">
+                                                    Pierde la costumbre de perder las cosas
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="records-header-wrapper-item">
+                                            <div class="cta-link-follow-records-wrapper">
+                                                <ion-icon style="margin-bottom: -.3rem;" name="add"></ion-icon> Seguir
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="records-body-wrapper">
+                                    <div class="records-body-wrapper-list">
+                                        <div class="records-body-wrapper-item">
+                                            <a href="/mx/records" class="records-box-body-wrapper">
+                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                                                </video>
+                                            </a>
+                                        </div>
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-button-stripe">
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="records-wrapper-item">
+                                <div class="records-header-wrapper">
+                                    <div class="records-header-wrapper-list">
+                                        <div class="records-header-wrapper-item">
+                                            <div class="profile-box-records-wrapper">
+                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                            </div>
+                                            <div class="title-left title-darker">
+                                                <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
+                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                </a>
+                                                <a href="/mx/product" class="title1-records-header-wrapper">
+                                                    AirTag
+                                                </a>
+                                                <h3 class="title2-records-header-wrapper">
+                                                    Pierde la costumbre de perder las cosas
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="records-header-wrapper-item">
+                                            <div class="cta-link-follow-records-wrapper">
+                                                <ion-icon style="margin-bottom: -.3rem;" name="add"></ion-icon> Seguir
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="records-body-wrapper">
+                                    <div class="records-body-wrapper-list">
+                                        <div class="records-body-wrapper-item">
+                                            <a href="/mx/records" class="records-box-body-wrapper">
+                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                                                </video>
+                                            </a>
+                                        </div>
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-button-stripe">
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="records-wrapper-item">
+                                <div class="records-header-wrapper">
+                                    <div class="records-header-wrapper-list">
+                                        <div class="records-header-wrapper-item">
+                                            <div class="profile-box-records-wrapper">
+                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                            </div>
+                                            <div class="title-left title-darker">
+                                                <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
+                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                </a>
+                                                <a href="/mx/product" class="title1-records-header-wrapper">
+                                                    AirTag
+                                                </a>
+                                                <h3 class="title2-records-header-wrapper">
+                                                    Pierde la costumbre de perder las cosas
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="records-header-wrapper-item">
+                                            <div class="cta-link-follow-records-wrapper">
+                                                <ion-icon style="margin-bottom: -.3rem;" name="add"></ion-icon> Seguir
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="records-body-wrapper">
+                                    <div class="records-body-wrapper-list">
+                                        <div class="records-body-wrapper-item">
+                                            <a href="/mx/records" class="records-box-body-wrapper">
+                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                                                </video>
+                                            </a>
+                                        </div>
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-button-stripe">
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="records-wrapper-item final-records-wrapper-item">
+                                <div class="records-header-wrapper">
+                                    <div class="records-header-wrapper-list">
+                                        <div class="records-header-wrapper-item">
+                                            <div class="profile-box-records-wrapper">
+                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                            </div>
+                                            <div class="title-left title-darker">
+                                                <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
+                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                </a>
+                                                <a href="/mx/product" class="title1-records-header-wrapper">
+                                                    AirTag
+                                                </a>
+                                                <h3 class="title2-records-header-wrapper">
+                                                    Pierde la costumbre de perder las cosas
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="records-header-wrapper-item">
+                                            <div class="cta-link-follow-records-wrapper">
+                                                <ion-icon style="margin-bottom: -.3rem;" name="add"></ion-icon> Seguir
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="records-body-wrapper">
+                                    <div class="records-body-wrapper-list">
+                                        <div class="records-body-wrapper-item">
+                                            <a href="/mx/records" class="records-box-body-wrapper">
+                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                                                </video>
+                                            </a>
+                                        </div>
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-button-stripe">
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="butters-row-2">
+                    <div class="butters-row-2-container">
+                        <a href="/mx/trend" class="butter-row-2-item">
+                            <div class="butter-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-title1">
+                                        Tendencias
+                                    </h2>
+                                    <h2 class="butter-title2">
+                                        Productos que estan en la cima en este momento.
+                                    </h2>
+                                </div>
+                                <ul class="butter-list-content">
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">1</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods Pro 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">2</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">3</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">4</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">5</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="/mx/trend" class="butter-row-2-item">
+                            <div class="butter-content">
+                                <div class="title-left title-darker">
+                                    <h2 class="butter-title1">
+                                        Recomendamos
+                                    </h2>
+                                    <h2 class="butter-title2">
+                                        Aquí te recomendamos lo mejor que hay.
+                                    </h2>
+                                </div>
+                                <ul class="butter-list-content">
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">1</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods Pro 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">2</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">3</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">4</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                    <li class="butter-item-content-flex">
+                                        <div class="butter-subitem-content">
+                                            <span class="trend-number-butter">5</span>
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <img src="/images/products/airpods-pro.png" alt="" class="butter-product-contemnt-img">
+                                        </div>
+                                        <div class="butter-subitem-content">
+                                            <div class="title-left">
+                                                <h2 class="butter-titleup-subitem">
+                                                    Apple
+                                                </h2>
+                                                <h2 class="butter-title1-subitem">
+                                                    AirPods 
+                                                </h2>
+                                                <h2 class="butter-title2-subitem">
+                                                    $5,350.00
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="cta-butter-subitemm">
+                                            <ion-icon class="cta-link-butter-subitem" name="ios-arrow-forward"></ion-icon>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="headline-wrap">
+                    <ul class="headline-wrap-list">
+                        <li class="headline-wrap-item">
+                            <div class="title-left title-darker">
+                                <h2 class="title-heading-extra-minus">
+                                    Eventos y Shoplist
+                                </h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shelf-carousel">
+                    <div class="shelf__carousel__container">
+                        <button class="cta-link-carousel-prev cta-link-carousel-prev2">
+                            <ion-icon name="ios-arrow-back"></ion-icon>
+                        </button>
+
+                        <ul class="shelf-carousel-list2">
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"><img class="image-square-shelf-carousel-small" src="/images/wrappers/first-night.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">First Night Event</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Disfruta del lanzamineto de MulStore</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"><img class="image-square-shelf-carousel-small" src="/images/wrappers/drinking.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Shoplist</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Drinking</a>
+                                    <h3 class="square-shelf-carousel-small-title2">¿Tienes sed? estas bebidas te refrescaran</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"><img class="image-square-shelf-carousel-small" src="/images/wrappers/sound-wave.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Shoplist</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Sound Wave</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Conectate con la música</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"><img class="image-square-shelf-carousel-small" src="/images/wrappers/winter-2021.png" alt=""></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Evento</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Winter 2021</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Sumergete en el invierno de 2021</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"> <img class="image-square-shelf-carousel-small" src="/images/wrappers/tone-adidas.png" alt=""> </a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Sección</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Tonos suaves</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Colores que enamoran, y los tiene Adidas</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Sección</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Top Smartwatch</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Descubre los mejores smartwatch</h3>
+                                </div>
+                            </li>
+                            <li class="shelf__carousel__item">
+                                <a href="/mx/events/first-night" class="square-shelf-carousel-small"></a>
+                                <div class="title-left">
+                                    <h2 class="square-shelf-carousel-small-titleup">Sección</h2>
+                                    <a href="/mx/events/first-night" class="square-shelf-carousel-small-title1">Sensaciones profundas</a>
+                                    <h3 class="square-shelf-carousel-small-title2">Descubre los mejores perfumes</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="cta-link-carousel-next cta-link-carousel-next2">
+                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>        
+        </div>        
+    </main>
+

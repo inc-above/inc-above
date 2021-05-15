@@ -1,0 +1,40 @@
+
+    {{> shop/menus/sidebar-message }}
+    
+    <main class="main-page">
+        <div class="massage-wrappers">   
+            <div class="container-message">
+                <section class="hero-auto-height wrapper-message">
+                    <div id="messageChat" class="message-chat">
+                        <div class="message-chat-list">
+                            <div class="message-chat-item">
+                                <div class="message-chat-bubble-other">Bienvenido a The North Face. ¿En que te puedo ayudar?</div>
+                            </div>
+                            <div class="message-chat-item">
+                                <div class="message-chat-bubble-other">Bienvenido a The North Face. ¿En que te puedo ayudar?</div>
+                            </div>
+                            <div class="message-chat-item">
+                                <div class="message-chat-bubble-you last-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error exercitationem eius voluptatibus dolores corrupti eos blanditiis molestias debitis veniam inventore obcaecati expedita, quaerat quod unde nobis consectetur deserunt quo similique.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>        
+    </main>    
+
+    <script>
+        function openChat(msgc, chatMessage) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("message-chat");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("sidebar-message-item");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(chatMessage).style.display = "block";
+        msgc.currentTarget.className += " active";
+        }
+    </script>

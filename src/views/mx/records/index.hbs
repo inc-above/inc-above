@@ -1,0 +1,390 @@
+    <div class="records-wrap" id="records">
+        <div class="records-container">
+            <div class="records-header">
+                <ul class="records-header-list">
+                    <li class="records-header-item">
+
+                    </li>
+                </ul>
+            </div>
+            <div class="records-body">
+                <ul class="records-body-list">
+                    <li class="records-body-item">
+                        <div class="video-records-item">
+                            <span onclick="pauseRecord()" 
+                                class="video-records-pause" 
+                                id="videoRecordspause">
+                            </span>
+                            <span onclick="playRecord()" 
+                                class="video-records-play" 
+                                id="videoRecordsplay">
+                            </span>
+                            <span onclick="playRecord()" class="video-record-play-icon-container">
+                                <ion-icon class="video-record-play-icon" id="iconPlayrecord" name="play"></ion-icon>
+                            </span>
+                            <span onclick="soundOffrecords()" class="sound-button-records" id="volumeOffrecords">
+                                <ion-icon name="volume-mute" style="margin-bottom: -.4rem;"></ion-icon>
+                            </span>
+                            <span onclick="soundOnrecords()" class="sound-button-records" id="volumeOnrecords">
+                                 <ion-icon name="volume-high" style="margin-bottom: -.4rem;"></ion-icon>
+                            </span>
+                            <span onclick="closeRecord()" class="close-button-records">
+                                 <ion-icon name="close" style="margin-bottom: -.4rem;"></ion-icon>
+                            </span>
+                            <video class="video-records" sequence="0" loading="lazy" poster="" id="recordsVideoplayer" playsinline autobuffer loop loadeddata waiting>
+                                <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                            </video>
+                        </div>
+                    </li>
+                    <li class="records-body-item">
+                        <div class="description-records-item">
+                            <div class="product-box-header">
+                                <ul class="product-box-header-list">
+                                    <li class="product-box-header-item">
+                                        <img src="/images/profile/apple.png" alt="" class="profile-image-company-product">
+                                        <div class="title-left title-darker">
+                                            <a href="/mx/suite/apple" class="title1-product-header">Apple <ion-icon class="verified-account-icon" name="checkmark-circle"></ion-icon></a>
+                                        </div>
+                                    </li>
+                                    <li class="product-box-header-item">
+                                        <button class="follow-company-header-button"><ion-icon style="margin-bottom: -.3rem; font-size: 15px;" name="add"></ion-icon> Seguir</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product-box-body">
+                                <ul class="product-box-body-list">
+                                    <li class="product-box-body-item">
+                                        <div class="title-left title-darker">
+                                            <h2 class="title1-product-body">Airtags</h2>
+                                            <h2 class="title-price-product-body">$600</h2>
+                                        </div>
+                                    </li>
+                                    <li class="product-box-body-item-flex">
+                                        <button class="favorites-product-btn"> <figure class="favorites-product-icon"></figure> </button>
+                                        <button class="like-product-btn"> <figure class="like-product-icon"></figure> </button>
+                                        <button class="share-product-btn"> <figure class="share-product-icon"></figure> </button>
+                                        <button class="add-bag-product-btn"> <figure class="bag-product-icon"></figure> </button>
+                                        <button class="buy-now-product-btn"> <figure class="buy-product-icon"></figure> </button>
+                                    </li>
+                                </ul>
+                                <div class="product-type-list-body">
+                                    <a class="product-type-item-body">
+                                        <span class="title1-product-type-item">
+                                            1 pack
+                                        </span>
+                                    </a>
+                                    <a class="product-type-item-body">
+                                        <span class="title1-product-type-item">
+                                            4 pack
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="product-box-footer">
+                                <ul class="product-box-footer-list">
+                                    <li class="product-box-footer-item">
+                                        <div class="title-left title-darker">
+                                            <h2 class="title1-product-footer">$600</h2>
+                                            <h2 class="title2-product-footer">IVA incluido de $63.*</h2>
+                                        </div>
+                                    </li>
+                                    <li class="product-box-footer-item-flex">
+                                        <div class="title-left title-darker">
+                                            <h2 class="title-delivery-product-footer">
+                                                <figure class="delivery-product-icon"></figure> Envio Gratis
+                                            </h2>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <form class="cta-product-footer" action="">
+                                        <button class="cta-btn-addbag-product-footer">Agregar a la bolsa</button>
+                                        <button class="cta-btn-buynow-product-footer">Comprar ahora</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-gallery">
+                                <div class="product-gallery-box">
+                                    <div class="headline-product">
+                                        <ul class="headline-product-list">
+                                            <li class="headline-product-item">
+                                                <div class="title-left title-darker">
+                                                    <h2 class="title-heading-extra-minus">Galería</h2>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shelf-carousel">
+                                        <div class="shelf__carousel__container__gallery">
+
+                                            <ul class="shelf-carousel-record" id="recordShelfcarousel">
+                                                <li class="shelf__carousel__item">
+                                                    <a class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/gallery/airtag-1.jpg" alt=""></a>
+                                                </li>
+                                                <li class="shelf__carousel__item">
+                                                    <a class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/gallery/airtag-2.jpg" alt=""></a>
+                                                </li>
+                                                <li class="shelf__carousel__item">
+                                                    <a class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/gallery/airtag-3.jpg" alt=""></a>
+                                                </li>
+                                                <li class="shelf__carousel__item">
+                                                    <a class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/gallery/airtag-4.jpg" alt=""></a>
+                                                </li>
+                                                <li class="shelf__carousel__item">
+                                                    <a class="square-shelf-carousel-big"><img class="image-square-shelf-carousel-small" src="/images/gallery/airtag-5.jpg" alt=""></a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-description">
+                                <div class="product-description-box">
+                                    <div class="headline-product">
+                                        <ul class="headline-product-list">
+                                            <li class="headline-product-item">
+                                                <div class="title-left title-darker">
+                                                    <h2 class="title-heading-extra-minus">Descripción</h2>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="title-left title-darker">
+                                        <h2 class="title1-product-description">
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non illo adipisci placeat cupiditate molestiae excepturi enim, sit delectus, officia voluptatum accusantium commodi inventore. Nam minima, voluptatem unde vel nostrum delectus!
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="product-details-box">
+                                    <div class="headline-product">
+                                        <ul class="headline-product-list">
+                                            <li class="headline-product-item">
+                                                <div class="title-left title-darker">
+                                                    <h2 class="title-heading-extra-minus">Detalles</h2>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="product-details-list">
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Dimensiones del producto</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">2.53 x 0.29 x 5.18 pulgadas</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Peso del producto</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">11.6 onzas</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">ASIN</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">B08PNN2SKF</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Número de modelo del producto</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">Apple iPhone 12</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">OS</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">iOS 14.4</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Wireless communication technologies	</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">Cellular</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Display technology</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">OLED</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Form Factor</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">Smarphone</h3>
+                                            </div>
+                                        </li>
+                                        <li class="product-details-item">
+                                            <div class="product-details-subitem">
+                                                <h3 class="title1-product-details-item">Fabricante</h3>
+                                            </div>
+                                            <div class="product-details-subitem">
+                                                <h3 class="title2-product-details-item">Apple Computer Inc.</h3>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-recommended">
+                                <div class="product-recommended-box">
+                                    <div class="headline-product">
+                                        <ul class="headline-product-list">
+                                            <li class="headline-product-item">
+                                                <div class="title-left title-darker">
+                                                    <h2 class="title-heading-extra-minus">Recomendaciones</h2>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="product-recommended-list">
+                                        <li class="product-recommended-item">
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-ratings">
+                                <div class="product-ratings-box">
+                                    <div class="headline-product">
+                                        <ul class="headline-product-list">
+                                            <li class="headline-product-item">
+                                                <div class="title-left title-darker">
+                                                    <h2 class="title-heading-extra-minus">Valoraciones y comentarios</h2>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-ratings-list">
+                                        <div class="product-ratings-item">
+                                            <div class="title-center title-darker">
+                                                <h2 class="title1-product-ratings">4.5 <span class="titleminus-product-ratings"> de 5</span></h2>
+                                                <a href="#comments" class="cta-link-product-ratings">345 comentarios</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-ratings-item">
+                                            <div class="chart-product-ratings">
+                                                <div class="chart-column-product-ratings">
+                                                    <div class="chart-column-product-rating-filled"></div>
+                                                </div>
+                                                <div class="chart-column-product-ratings">
+                                                    <div class="chart-column-product-rating-filled"></div>
+                                                </div>
+                                                <div class="chart-column-product-ratings">
+                                                    <div class="chart-column-product-rating-filled"></div>
+                                                </div>
+                                                <div class="chart-column-product-ratings">
+                                                    <div class="chart-column-product-rating-filled"></div>
+                                                </div>
+                                                <div class="chart-column-product-ratings">
+                                                    <div class="chart-column-product-rating-5filled"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="product-comments" id="comments">
+                                <div class="product-comments-header">
+                                    <ul class="product-comments-header-list">
+                                        <li class="product-comments-header-item">
+                                            <div class="profile-box-product-comments">
+                                                <span class="title-profile-initials">LR</span>
+                                            </div>
+                                        </li>
+                                        <li class="product-comments-header-item">
+                                            <input type="text" class="product-comment-input" placeholder="Haz un comentario">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-comments-box">
+                                    <ul class="product-comments-box-list">
+                                        <li class="product-comments-box-item">
+                                            <div class="profile-box-product-comments">
+                                                <img src="" alt="" class="image-profile-product-comment">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var videoRecords = document.getElementById("recordsVideoplayer");
+        function openRecord() {
+            videoRecords.play();
+            video.pause(); 
+            document.getElementById("records").style.display = "block";
+            document.getElementById("bodyFact").style.overflow = "hidden";
+        }
+
+        function closeRecord() {
+            videoRecords.pause();
+            video.play(); 
+            document.getElementById("records").style.display = "none";
+            document.getElementById("bodyFact").style.overflow = "auto";
+            document.getElementById("videoRecordspause").style.display = "none";
+        }
+
+        function pauseRecord() {
+            videoRecords.pause();
+            document.getElementById("videoRecordsplay").style.display = "block";
+            document.getElementById("videoRecordsplay").style.zIndex = "90";
+            document.getElementById("videoRecordspause").style.display = "none";
+            document.getElementById("iconPlayrecord").style.display = "block";
+        }
+
+        function playRecord() {
+            videoRecords.play();
+            document.getElementById("videoRecordsplay").style.display = "none";
+            document.getElementById("videoRecordsplay").style.zIndex = "-90";
+            document.getElementById("videoRecordspause").style.display = "block";
+            document.getElementById("iconPlayrecord").style.display = "none";
+        }
+
+        function soundOnrecords() {
+            videoRecords.muted = true; 
+            document.getElementById("volumeOffrecords").style.display = "block";
+            document.getElementById("volumeOnrecords").style.display = "none";
+        }
+
+        function soundOffrecords() {
+            videoRecords.muted = false; 
+            document.getElementById("volumeOffrecords").style.display = "none";
+            document.getElementById("volumeOnrecords").style.display = "block";
+        }    
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.5/glider.min.js"></script>
+
+    <script src="/scripts/glider-slide3.js"></script>
+
+    
+
+    

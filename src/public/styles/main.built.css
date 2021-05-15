@@ -30,24 +30,29 @@ body
 
 body::-webkit-scrollbar 
 {
-	width: 4px;
+	width: 20px;
 	height: 5px;
-	margin: 1px;
-	border-radius: 100px;
 }
   
   /* Track */
 body::-webkit-scrollbar-track 
 {
 	background: transparent; 
-	margin: 1px;
+	padding: 1rem;
+    width: 25px;
 }
    
   /* Handle */
 body::-webkit-scrollbar-thumb 
 {
-	background: #555555; 
-	transition: 0.5s;
+    background: #555555;
+    transition: 0.5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 30px;
 }
   
   /* Handle on hover */
@@ -279,21 +284,6 @@ option
 
 /* COMPONENTS PAGE STARTS */
 
-.gray-text
-{
-    color: #686868;
-}
-
-.gray-light-text
-{
-    color: #9b9b9b;
-}
-
-.red-text
-{
-    color: #ff3838;
-}
-
 .title-center
 {
     justify-content: center;
@@ -452,6 +442,14 @@ option
 .title-heading-minus
 {
     font-size: 3.5rem;
+    letter-spacing: -.005rem;
+    line-height: 1.07143;
+    margin-bottom: .6rem;
+}
+
+.title-heading-medium-minus
+{
+    font-size: 2.9rem;
     letter-spacing: -.005rem;
     line-height: 1.07143;
     margin-bottom: .6rem;
@@ -1368,277 +1366,6 @@ option
 
 /* CAROUSEL PRODUCTS AND SERVICES ENDS */
 
-
-/* BUTTERS STARTS */
-
-.cta-section-butter-link
-{
-	transition: 0.5s linear;
-	cursor: pointer;
-}
-
-.flex-butter-sections
-{
-	display: flex;
-	align-items: center;
-}
-
-.wrapper-butter-section-initial
-{
-	background: url('/images/wrappers/especific-credit.png');
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-butter-section
-{
-	background: #ffffff;
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-butter-section-2
-{
-	background: url('/images/wrappers/credit-lite.png');
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-butter-section-trend
-{
-	background: url('/images/wrappers/best-credit.png');
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-butter-section-calc
-{
-	background: url('/images/wrappers/calc-wrap.png');
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-butter-section-travel
-{
-	background: url('/images/wrappers/travel-egypt.jpg');
-	border-radius: 10px;
-	position: relative;
-}
-
-.wrapper-image-format
-{
-	width: 100%;
-	bottom: 0;
-	position: absolute;
-	pointer-events: none;
-	border-radius: 10px;
-	z-index: 1;
-}
-
-.icon-bottom-butter
-{
-	width: 55px;
-	max-width: 100%;
-	max-height: 100%;
-	pointer-events: none;
-}
-
-
-.bottom-butter-menu
-{
-	background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(45px) opacity(100%);
-    -webkit-backdrop-filter: blur(45px) opacity(100%);
-    -moz-backdrop-filter: blur(45px) opacity(100%);
-    -o-backdrop-filter: blur(45px) opacity(100%);
-	-ms-backdrop-filter: blur(45px) opacity(100%);
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	z-index: 700;
-}
-
-.bottom-butter-menu-solid
-{
-	background: #ffffff;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	z-index: 700;
-}
-
-.bottom-butter-menu-2
-{
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 700;
-	margin-bottom: 1rem;
-}
-
-.bottom-butter-menu-list
-{
-	padding: 2.5rem 1.5rem;
-	justify-content: space-between;
-	display: flex;
-    align-items: center;
-}
-
-.bottom-butter-menu-item
-{
-    right: 0;
-}
-
-.bottom-butter-menu-item-flex
-{
-	display: flex;
-    align-items: center;
-    left: 0;
-    width: 100%;
-}
-
-.grid-title-bottom-butter
-{
-	display: grid;
-	margin-left: .5rem;
-}
-
-.title-butter-menu
-{
-	color: #ffffff;
-	font-weight: normal;
-	font-size: 18px;
-	margin-bottom: .2rem;
-	max-width: 150px;
-}
-
-.title-sub-butter-menu
-{
-	color: #e0e0e0;
-	font-weight: lighter;
-	font-size: 16.5px;
-	max-width: 140px;
-}
-
-.cta-button-more-butter
-{
-	background: #007AFF;
-	border-radius: 100px;
-	padding: 0.5rem 1.5rem;
-	color: #ffffff;
-	font-size: 16px;
-	display: inline-block;
-	width: 60px;
-	justify-content: center;
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.cta-button-more-butter:hover
-{
-	opacity: 0.5;
-}
-
-.cta-button-more-butter-blured
-{
-	background: rgba(243, 243, 243, 0.55);
-	border-radius: 100px;
-	padding: 0.5rem 1.5rem;
-	color: #007AFF;
-	font-size: 16px;
-	display: inline-block;
-	width: 60px;
-	justify-content: center;
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-.cta-button-more-butter-blured-dark
-{
-	background: rgba(0, 0, 0, 0.55);
-}
-
-.cta-button-more-butter-blured:hover
-{
-	opacity: 0.5;
-}
-
-.cta-blur-back-butter
-{
-	background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(45px) opacity(100%);
-    -webkit-backdrop-filter: blur(45px) opacity(100%);
-    -moz-backdrop-filter: blur(45px) opacity(100%);
-    -o-backdrop-filter: blur(45px) opacity(100%);
-	-ms-backdrop-filter: blur(45px) opacity(100%);
-	border-radius: 100px;
-	padding: 0.5rem 1.5rem;
-	justify-content: center;
-}
-
-.cta-blur-back-butter-dark
-{
-	background: rgba(0, 0, 0, 0.267);
-    backdrop-filter: blur(45px) opacity(100%);
-    -webkit-backdrop-filter: blur(45px) opacity(100%);
-    -moz-backdrop-filter: blur(45px) opacity(100%);
-    -o-backdrop-filter: blur(45px) opacity(100%);
-	-ms-backdrop-filter: blur(45px) opacity(100%);
-	border-radius: 100px;
-	padding: 0.5rem 1.5rem;
-	justify-content: center;
-}
-
-.cta-button-more-butter-blur
-{
-	color: #ffffff;
-	font-size: 16px;
-}
-
-.cta-button-more-butter-blur-dark
-{
-	color: #111111;
-	font-size: 16px;
-}
-
-.left-space-butter
-{
-	margin-left: 2rem;
-}
-
-.hero-butter
-{
-	height: 50.5rem;
-	background-size: auto 73.6rem;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: 2rem;
-	-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.25);
-	width: 50%;
-	cursor: pointer;
-	transition: 0.5s;
-	overflow: hidden;
-}
-
-.hero-butter:hover
-{
-	-webkit-box-shadow: 0px 0px 97px 0px rgba(0,0,0,0.20);
-	-moz-box-shadow: 0px 0px 97px 0px rgba(0,0,0,0.20);
-	box-shadow: 0px 0px 97px 0px rgba(0,0,0,0.20);
-}
-
-/* BUTTERS ENDS */
-
 /* SWIPES START */
 
 .swiper-container
@@ -1950,6 +1677,17 @@ option
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
+}
+
+.hero-auto-height
+{
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
 }
 
 /* HERO'S ENDS */

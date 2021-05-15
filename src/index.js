@@ -31,7 +31,6 @@ app.use(session({
 
 // ROUTES
 app.use(require("./routes/index"));
-app.use(require("./routes/shop"));
 app.use(require("./routes/access"));
 
 // STATIC ROUTES 

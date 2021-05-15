@@ -1,0 +1,34 @@
+<div class="menu-suite-navigation" id="segmentSuite">
+    <div class="menu-suite-navigation-container">
+        <ul class="menu-suite-navigation-list">
+            <a href="/mx/suite/apple" class="menu-suite-navigation-item current-menu-site-nav-records">
+                <h2 class="title1-menu-suite-navigation">
+                    Records
+                </h2>
+            </a>
+            <a href="/mx/suite/apple/publications" class="menu-suite-navigation-item current-menu-site-nav-publications">
+                <h2 class="title1-menu-suite-navigation">
+                    Publicaciones
+                </h2>
+            </a>
+            <a href="/mx/suite/apple/store" class="menu-suite-navigation-item current-menu-site-nav-store">
+                <h2 class="title1-menu-suite-navigation">
+                    Tienda
+                </h2>
+            </a>
+            <a href="/mx/suite/apple/events" class="menu-suite-navigation-item current-menu-site-nav-events">
+                <h2 class="title1-menu-suite-navigation">
+                    Eventos
+                </h2>
+            </a>
+        </ul>
+    </div>
+</div>
+
+<script>
+        window.addEventListener('scroll', function () {
+            let segmentSuitenav = document.getElementById('segmentSuite');
+            let windowPosition = window.scrollY > 500;
+            segmentSuitenav.classList.toggle('segment-suite-nav-active', windowPosition);
+        });
+</script>

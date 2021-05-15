@@ -1,0 +1,252 @@
+
+
+    <style>
+        .current-menu-site-nav-records
+        {
+            background: #ffffff;
+            border-radius: 10px;
+            color: #111111;
+        }
+
+        @media (prefers-color-scheme: dark) 
+        {
+            .current-menu-site-nav-records
+            {
+                background: #444444;
+                border-radius: 10px;
+                color: #ffffff;
+            }
+        }
+    </style>
+
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    {{> shop/menus/tabnav }}
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                <section class="hero-initial-medium wrapper-initial-section-none">
+                    <a class="cta-link-section">
+
+                        
+
+                        <video class="wrapper-video-initial" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
+                            <source src="/videos/ipad-pro.mp4" type="video/mp4" loading="lazy">
+                        </video>
+                        <!--- <div class="title-left-top-absolute">
+                            <h2 class="title-heading-minus gradient-purple-text">
+                                Descubre
+                            </h2>
+                        </div> --->
+                        <div class="header-suite-initial">
+                            <div class="header-suite-initial-container">
+                                <div class="header-suite-initial-list">
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">Mac</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">iPad</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">iPhone</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">Watch</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">TV</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">Music</a>
+                                    </div>
+                                    <div class="header-suite-initial-item">
+                                        <a href="" class="cta-link-navbar-suite-initial">Eventos</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-blur">
+                            <div class="square-blur-info">
+                                <div class="translucent-bottom-menu-suite">
+                                    <ul class="blur-squared-list">
+                                        <li class="blur-squared-item">
+                                            <img src="/images/profile/apple.png" alt="" class="image-profile-suite">
+                                        </li>
+                                        <li class="blur-squared-item">
+                                            <h2 class="title1-translucent-bottom-menu">
+                                                Apple <span class="verified-store"> <ion-icon class="verified-check-store" name="checkmark-circle"></ion-icon> </span>
+                                            </h2>
+                                            <h3 class="title2-translucent-bottom-menu">
+                                                Tecnología
+                                            </h3>
+                                        </li>
+
+                                        <li class="blur-squared-item-absolute-right">
+                                            <a href="" class="cta-link-rounded-white"> <ion-icon name="add" class="icon-cta-link"></ion-icon> Seguir</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <button onclick="soundon()" class="soundon-button-initial2" id="buttonVideosoundon"><figure class="soundon-icon-initial"></figure></button>
+                    <button onclick="muted()" class="muted-button-initial2" id="buttonVideomuted"><figure class="muted-icon-initial"></figure></button>
+
+                    <button onclick="play()" class="play-button-initial2" id="buttonVideoplay"><figure class="play-icon-initial"></figure></button>
+                    <button onclick="pause()" class="pause-button-initial2" id="buttonVideopause"><figure class="pause-icon-initial"></figure></button>
+                </section>
+
+                <script> 
+                    var video = document.getElementById("videoPlayer");
+                    function play() { 
+                        video.play(); 
+                        document.getElementById("buttonVideoplay").style.display = "none";
+                        document.getElementById("buttonVideopause").style.display = "block"; 
+                    }
+
+                    function pause() { 
+                        video.pause(); 
+                        document.getElementById("buttonVideoplay").style.display = "block";
+                        document.getElementById("buttonVideopause").style.display = "none";
+                    }
+
+                    function soundon() { 
+                        video.muted = true; 
+                        document.getElementById("buttonVideosoundon").style.display = "none";
+                        document.getElementById("buttonVideomuted").style.display = "block";
+                    }
+
+                    function muted() { 
+                        video.muted = false; 
+                        document.getElementById("buttonVideosoundon").style.display = "block";
+                        document.getElementById("buttonVideomuted").style.display = "none";
+                    }
+
+                </script>
+
+                <script>
+                    var video = document.getElementById('videoPlayer'); video.control = false;
+                </script>
+
+                {{> shop/menus/segment-suite }}
+
+                <div class="records-suite">
+                    <div class="records-suite-container">
+                        <ul class="records-suite-list">
+                            <a onclick="openRecord()" class="records-suite-item">
+                                <img src="/videos/covers/imac-2021.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iMac 24"
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Dile hola a la nueva Mac
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/mx/records" class="records-suite-item">
+                                <img src="/videos/covers/airtag.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            AirTag
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Pierde la costumbre de perder las cosas
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a onclick="openRecord()" class="records-suite-item">
+                                <img src="/videos/covers/iphone-12-purple.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="records-suite-item">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            Apple TV 4K
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Redefinimos la TV
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="records-suite-item">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="records-suite-item">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+                {{> shop/records }}
+
+                
+
+                
+            </div>        
+        </div>        
+    </main>
+
