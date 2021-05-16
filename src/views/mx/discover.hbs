@@ -77,7 +77,7 @@
                 </section>
 
                 <script> 
-                    var video = document.getElementById("videoPlayer");
+                    var video = document.getElementById("videoPlayer"); video.control = false;
                     function play() { 
                         video.play(); 
                         document.getElementById("buttonVideoplay").style.display = "none";
@@ -104,14 +104,11 @@
 
                 </script>
 
-                <script>
-                    var video = document.getElementById('videoPlayer'); video.control = false;
-                </script>
 
                 <div class="shelf-carousel">
                     <div class="shelf__carousel__container">
                         <button class="cta-link-carousel-prev cta-link-carousel-prevrow2">
-                            <ion-icon name="ios-arrow-back"></ion-icon>
+                            <ion-icon name="chevron-back"></ion-icon>
                         </button>
 
                         <ul class="shelf-carousel-listrow2">
@@ -142,7 +139,7 @@
                         </ul>
 
                         <button class="cta-link-carousel-next cta-link-carousel-nextrow2">
-                            <ion-icon name="ios-arrow-forward"></ion-icon>
+                            <ion-icon name="chevron-forward"></ion-icon>
                         </button>
                     </div>
                 </div>
@@ -197,11 +194,20 @@
                                 <div class="records-body-wrapper">
                                     <div class="records-body-wrapper-list">
                                         <div class="records-body-wrapper-item">
-                                            <a href="/mx/records" class="records-box-body-wrapper">
-                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
-                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
-                                                </video>
-                                            </a>
+                                            <div class="records-box-body-wrapper">
+                                                <a href="/mx/records" class="records-cta-body-wrapper">
+                                                    <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoRecordwrapper" autoplay muted autobuffer loop loadeddata waiting>
+                                                        <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
+                                                    </video>
+                                                </a>
+                                                <div class="cta-footer-records-box-wrapper">
+                                                    <button onclick="pauseRecordwrapper()" class="cta-footer-records-wrapper cta-pause-footer-records-wrapper" id="pauseRecordwrapper"><ion-icon name="pause"></ion-icon></button>
+                                                    <button onclick="playRecordwrapper()" class="cta-footer-records-wrapper cta-play-footer-records-wrapper" id="playRecordwrapper"><ion-icon name="play"></ion-icon></button>
+
+                                                    <button onclick="soundonRecordwrapper()" class="cta-footer-records-wrapper cta-soundon-footer-records-wrapper" id="soundonRecordwrapper"><ion-icon name="volume-high"></ion-icon></button>
+                                                    <button onclick="soundoffRecordwrapper()" class="cta-footer-records-wrapper cta-soundoff-footer-records-wrapper" id="soundoffRecordwrapper"><ion-icon name="volume-mute"></ion-icon></button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="records-body-wrapper-item">
                                             <div class="records-button-stripe">
@@ -234,17 +240,17 @@
                                     <div class="records-header-wrapper-list">
                                         <div class="records-header-wrapper-item">
                                             <div class="profile-box-records-wrapper">
-                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                                <img src="/images/profile/louis-vuitton.png" alt="" class="image-profile-records-wrapper">
                                             </div>
                                             <div class="title-left title-darker">
                                                 <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
-                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                    Louis Vuitton <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
                                                 </a>
                                                 <a href="/mx/product" class="title1-records-header-wrapper">
-                                                    AirTag
+                                                    Coeur Battant Parfum
                                                 </a>
                                                 <h3 class="title2-records-header-wrapper">
-                                                    Pierde la costumbre de perder las cosas
+                                                    Único aroma que envuelve viajes
                                                 </h3>
                                             </div>
                                         </div>
@@ -258,32 +264,41 @@
                                 <div class="records-body-wrapper">
                                     <div class="records-body-wrapper-list">
                                         <div class="records-body-wrapper-item">
-                                            <a href="/mx/records" class="records-box-body-wrapper">
-                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
-                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
-                                                </video>
-                                            </a>
+                                            <div class="records-box-body-wrapper">
+                                                <a href="/mx/records" class="records-cta-body-wrapper">
+                                                    <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoRecordwrapper" autoplay muted autobuffer loop loadeddata waiting>
+                                                        <source src="/videos/louis-vuitton-cb.mp4" type="video/mp4" loading="lazy">
+                                                    </video>
+                                                </a>
+                                                <div class="cta-footer-records-box-wrapper">
+                                                    <button onclick="pauseRecordwrapper()" class="cta-footer-records-wrapper cta-pause-footer-records-wrapper" id="pauseRecordwrapper"><ion-icon name="pause"></ion-icon></button>
+                                                    <button onclick="playRecordwrapper()" class="cta-footer-records-wrapper cta-play-footer-records-wrapper" id="playRecordwrapper"><ion-icon name="play"></ion-icon></button>
+
+                                                    <button onclick="soundonRecordwrapper()" class="cta-footer-records-wrapper cta-soundon-footer-records-wrapper" id="soundonRecordwrapper"><ion-icon name="volume-high"></ion-icon></button>
+                                                    <button onclick="soundoffRecordwrapper()" class="cta-footer-records-wrapper cta-soundoff-footer-records-wrapper" id="soundoffRecordwrapper"><ion-icon name="volume-mute"></ion-icon></button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="records-body-wrapper-item">
                                             <div class="records-button-stripe">
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                    <h1 class="title1-records-button-stripe">1.3M</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                    <h1 class="title1-records-button-stripe">800K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                    <h1 class="title1-records-button-stripe">200K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                    <h1 class="title1-records-button-stripe">120K</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -295,18 +310,15 @@
                                     <div class="records-header-wrapper-list">
                                         <div class="records-header-wrapper-item">
                                             <div class="profile-box-records-wrapper">
-                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                                <img src="/images/profile/the-north-face.png" alt="" class="image-profile-records-wrapper">
                                             </div>
                                             <div class="title-left title-darker">
                                                 <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
-                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                    The North Face <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon> 
                                                 </a>
                                                 <a href="/mx/product" class="title1-records-header-wrapper">
-                                                    AirTag
+                                                    The North Face x Gucci Collection
                                                 </a>
-                                                <h3 class="title2-records-header-wrapper">
-                                                    Pierde la costumbre de perder las cosas
-                                                </h3>
                                             </div>
                                         </div>
                                         <div class="records-header-wrapper-item">
@@ -319,54 +331,63 @@
                                 <div class="records-body-wrapper">
                                     <div class="records-body-wrapper-list">
                                         <div class="records-body-wrapper-item">
-                                            <a href="/mx/records" class="records-box-body-wrapper">
-                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
-                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
-                                                </video>
-                                            </a>
+                                            <div class="records-box-body-wrapper">
+                                                <a href="/mx/records" class="records-cta-body-wrapper">
+                                                    <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoRecordwrapper" autoplay muted autobuffer loop loadeddata waiting>
+                                                        <source src="/videos/north-face-gucci.mp4" type="video/mp4" loading="lazy">
+                                                    </video>
+                                                </a>
+                                                <div class="cta-footer-records-box-wrapper">
+                                                    <button onclick="pauseRecordwrapper()" class="cta-footer-records-wrapper cta-pause-footer-records-wrapper" id="pauseRecordwrapper"><ion-icon name="pause"></ion-icon></button>
+                                                    <button onclick="playRecordwrapper()" class="cta-footer-records-wrapper cta-play-footer-records-wrapper" id="playRecordwrapper"><ion-icon name="play"></ion-icon></button>
+
+                                                    <button onclick="soundonRecordwrapper()" class="cta-footer-records-wrapper cta-soundon-footer-records-wrapper" id="soundonRecordwrapper"><ion-icon name="volume-high"></ion-icon></button>
+                                                    <button onclick="soundoffRecordwrapper()" class="cta-footer-records-wrapper cta-soundoff-footer-records-wrapper" id="soundoffRecordwrapper"><ion-icon name="volume-mute"></ion-icon></button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="records-body-wrapper-item">
                                             <div class="records-button-stripe">
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                    <h1 class="title1-records-button-stripe">1.3M</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                    <h1 class="title1-records-button-stripe">800K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                    <h1 class="title1-records-button-stripe">200K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                    <h1 class="title1-records-button-stripe">120K</h1>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="records-wrapper-item final-records-wrapper-item">
+                            <li class="records-wrapper-item">
                                 <div class="records-header-wrapper">
                                     <div class="records-header-wrapper-list">
                                         <div class="records-header-wrapper-item">
                                             <div class="profile-box-records-wrapper">
-                                                <img src="/images/profile/apple.png" alt="" class="image-profile-records-wrapper">
+                                                <img src="/images/profile/samsung.png" alt="" class="image-profile-records-wrapper">
                                             </div>
                                             <div class="title-left title-darker">
                                                 <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
-                                                    Apple Inc. <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                    Samsung <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
                                                 </a>
                                                 <a href="/mx/product" class="title1-records-header-wrapper">
-                                                    AirTag
+                                                    Soundbar S50A
                                                 </a>
                                                 <h3 class="title2-records-header-wrapper">
-                                                    Pierde la costumbre de perder las cosas
+                                                    Más alla del sonido
                                                 </h3>
                                             </div>
                                         </div>
@@ -380,32 +401,111 @@
                                 <div class="records-body-wrapper">
                                     <div class="records-body-wrapper-list">
                                         <div class="records-body-wrapper-item">
-                                            <a href="/mx/records" class="records-box-body-wrapper">
-                                                <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoPlayer" autoplay muted autobuffer loop loadeddata waiting>
-                                                    <source src="/videos/airtag.mp4" type="video/mp4" loading="lazy">
-                                                </video>
-                                            </a>
+                                            <div class="records-box-body-wrapper">
+                                                <a href="/mx/records" class="records-cta-body-wrapper">
+                                                    <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoRecordwrapper" autoplay muted autobuffer loop loadeddata waiting>
+                                                        <source src="/videos/samsung-soundbar.mp4" type="video/mp4" loading="lazy">
+                                                    </video>
+                                                </a>
+                                                <div class="cta-footer-records-box-wrapper">
+                                                    <button onclick="pauseRecordwrapper()" class="cta-footer-records-wrapper cta-pause-footer-records-wrapper" id="pauseRecordwrapper"><ion-icon name="pause"></ion-icon></button>
+                                                    <button onclick="playRecordwrapper()" class="cta-footer-records-wrapper cta-play-footer-records-wrapper" id="playRecordwrapper"><ion-icon name="play"></ion-icon></button>
+
+                                                    <button onclick="soundonRecordwrapper()" class="cta-footer-records-wrapper cta-soundon-footer-records-wrapper" id="soundonRecordwrapper"><ion-icon name="volume-high"></ion-icon></button>
+                                                    <button onclick="soundoffRecordwrapper()" class="cta-footer-records-wrapper cta-soundoff-footer-records-wrapper" id="soundoffRecordwrapper"><ion-icon name="volume-mute"></ion-icon></button>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="records-body-wrapper-item">
                                             <div class="records-button-stripe">
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">1M</h1>
+                                                    <h1 class="title1-records-button-stripe">1.3M</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">700K</h1>
+                                                    <h1 class="title1-records-button-stripe">800K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">300K</h1>
+                                                    <h1 class="title1-records-button-stripe">200K</h1>
                                                 </div>
 
                                                 <div class="records-button-stripe-item">
                                                     <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
-                                                    <h1 class="title1-records-button-stripe">250K</h1>
+                                                    <h1 class="title1-records-button-stripe">120K</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="records-wrapper-item">
+                                <div class="records-header-wrapper">
+                                    <div class="records-header-wrapper-list">
+                                        <div class="records-header-wrapper-item">
+                                            <div class="profile-box-records-wrapper">
+                                                <img src="/images/profile/xbox.png" alt="" class="image-profile-records-wrapper">
+                                            </div>
+                                            <div class="title-left title-darker">
+                                                <a href="/mx/suite/apple" class="titlesup-records-header-wrapper">
+                                                    XBOX <ion-icon class="verified-icon-company-records" name="checkmark-circle"></ion-icon>
+                                                </a>
+                                                <a href="/mx/product" class="title1-records-header-wrapper">
+                                                    XBOX Series S
+                                                </a>
+                                                <h3 class="title2-records-header-wrapper">
+                                                    Pequeño pero super potente
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="records-header-wrapper-item">
+                                            <div class="cta-link-follow-records-wrapper">
+                                                <ion-icon style="margin-bottom: -.3rem;" name="add"></ion-icon> Seguir
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="records-body-wrapper">
+                                    <div class="records-body-wrapper-list">
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-box-body-wrapper">
+                                                <a href="/mx/records" class="records-cta-body-wrapper">
+                                                    <video class="record-video-body-wrapper" loading="lazy" poster="" id="videoRecordwrapper" autoplay muted autobuffer loop loadeddata waiting>
+                                                        <source src="/videos/xbox-series-s.mp4" type="video/mp4" loading="lazy">
+                                                    </video>
+                                                </a>
+                                                <div class="cta-footer-records-box-wrapper">
+                                                    <button onclick="pauseRecordwrapper()" class="cta-footer-records-wrapper cta-pause-footer-records-wrapper" id="pauseRecordwrapper"><ion-icon name="pause"></ion-icon></button>
+                                                    <button onclick="playRecordwrapper()" class="cta-footer-records-wrapper cta-play-footer-records-wrapper" id="playRecordwrapper"><ion-icon name="play"></ion-icon></button>
+
+                                                    <button onclick="soundonRecordwrapper()" class="cta-footer-records-wrapper cta-soundon-footer-records-wrapper" id="soundonRecordwrapper"><ion-icon name="volume-high"></ion-icon></button>
+                                                    <button onclick="soundoffRecordwrapper()" class="cta-footer-records-wrapper cta-soundoff-footer-records-wrapper" id="soundoffRecordwrapper"><ion-icon name="volume-mute"></ion-icon></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="records-body-wrapper-item">
+                                            <div class="records-button-stripe">
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="heart"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">1.3M</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="share-outline"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">800K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-add"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">200K</h1>
+                                                </div>
+
+                                                <div class="records-button-stripe-item">
+                                                    <ion-icon class="records-icon-button-stripe" name="bag-handle"></ion-icon>
+                                                    <h1 class="title1-records-button-stripe">120K</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -415,6 +515,35 @@
                         </ul>
                     </div>
                 </div>
+
+                 <script> 
+                    var videoRecordswrapper = document.getElementById("videoRecordwrapper"); video.control = false;
+                    function playRecordwrapper() { 
+                        videoRecordswrapper.play(); 
+                        document.getElementById("playRecordwrapper").style.display = "none";
+                        document.getElementById("pauseRecordwrapper").style.display = "block"; 
+                    }
+
+                    function pauseRecordwrapper() { 
+                        videoRecordswrapper.pause(); 
+                        document.getElementById("playRecordwrapper").style.display = "block";
+                        document.getElementById("pauseRecordwrapper").style.display = "none";
+                    }
+
+                    function soundonRecordwrapper() { 
+                        videoRecordswrapper.muted = true; 
+                        document.getElementById("soundonRecordwrapper").style.display = "none";
+                        document.getElementById("soundoffRecordwrapper").style.display = "block";
+                    }
+
+                    function soundoffRecordwrapper() { 
+                        videoRecordswrapper.muted = false; 
+                        document.getElementById("soundonRecordwrapper").style.display = "block";
+                        document.getElementById("soundoffRecordwrapper").style.display = "none";
+                    }
+
+                </script>
+
                 
 
                 <div class="butters-row-2">

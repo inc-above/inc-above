@@ -379,8 +379,8 @@
 
 .records-box-body-wrapper
 {
-    width: 22rem;
-    height: 42rem;
+    width: 27rem;
+    height: 47rem;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -414,11 +414,65 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    pointer-events: none;
 }
 
 .final-records-wrapper-item
 {
     border-bottom: 0px solid #cecece;
+}
+
+.cta-footer-records-wrapper
+{
+    backdrop-filter: blur(75px);
+    -webkit-backdrop-filter: blur(75px);
+    -moz-backdrop-filter: blur(75px);
+    -o-backdrop-filter: blur(75px);
+    -ms-backdrop-filter: blur(75px);
+    background: rgba(20, 20, 20, 0.35);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: .5rem 1rem;
+    font-size: 18px;
+    color: #ffffff;
+    bottom: 0;
+    margin-bottom: 1.5rem;
+    position: absolute;
+    z-index: 700;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.cta-pause-footer-records-wrapper
+{
+    display: block;
+    left: 0;
+    margin-left: 1rem;
+}
+
+.cta-play-footer-records-wrapper
+{
+    display: none;
+    left: 0;
+    margin-left: 1rem;
+}
+
+.cta-soundon-footer-records-wrapper
+{
+    display: none;
+    right: 0;
+    margin-right: 1rem;
+}
+
+.cta-soundoff-footer-records-wrapper
+{
+    display: block;
+    right: 0;
+    margin-right: 1rem;
 }
 
 /* RECORDS ENDS */
@@ -794,6 +848,11 @@
     .records-wrapper-item
     {
         border-bottom: 1px solid #333333;
+    }
+
+    .profile-box-records-wrapper
+    {
+        border: 1px solid #333333;
     }
     
 }
