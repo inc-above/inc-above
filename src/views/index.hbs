@@ -12,22 +12,29 @@
 </head>
 <body>
 
-    {{> navigation }}
-
-    <section class="hero-basic wrapper-intro-index">
-        <div class="tile-squared">
-            <div class="container-wrap">
-                <div class="title-center-medium">
-                    <img src="/images/icons/sho-logo.png" alt="" class="icon-continental-index">
-                    <div class="title-heading-extra-minus">
-                        Bienvenido a {{{ title }}}
-                    </div>
-                    <div class="title-sub-heading-extra-minus">
-                        Inicia sesión o crea un Above ID para poder acceder.
-                    </div>
-                    <div class="cta-center">
-                        <a href="/access/signin" class="cta-link-square-blue">Inciar sesión</a>
-                        <a href="/access/signup" class="cta-link-outline-blue">Registrarse</a>
+    <section class="hero-auto wrapper-intro-index">
+        <div class="wrapper-translucent-back">
+            <div class="tile-squared">
+                <div class="container-wrap">
+                    <div class="title-center-medium">
+                        <img src="/images/icons/mul-logo.png" alt="" class="icon-continental-index">
+                        <div class="title-heading-extra-minus">
+                            Inicia sesión en MulStore
+                        </div>
+                        <form action="" class="access-form">
+                            <div class="access-form-container">
+                                <div class="access-form-item">
+                                    <input type="email" placeholder="Above ID" class="access-input up-access-input" autocomplete="none" autofocus>
+                                </div>
+                                <div class="access-form-item">
+                                    <input type="password" placeholder="Contraseña" class="access-input down-access-input" autocomplete="none">
+                                </div>
+                            </div>
+                            <div class="cta-center">
+                                <button class="cta-link-square-large-blue">Iniciar</button> <br> <br>
+                                <a href="https://aboveid.abovewe.com/" class="cta-link-blue">¿No tienes cuenta? Crea un Above ID</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

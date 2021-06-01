@@ -23,26 +23,22 @@ li
     list-style: none;
 }
 
-body
-{
-  background: #ffffff;
-}
 
 body::-webkit-scrollbar 
 {
-	width: 20px;
-	height: 5px;
+	width: 6px;
+	height: 25px;
+    cursor: pointer;
 }
-  
-  /* Track */
+
+/* Track */
 body::-webkit-scrollbar-track 
 {
 	background: transparent; 
 	padding: 1rem;
-    width: 25px;
 }
    
-  /* Handle */
+/* Handle */
 body::-webkit-scrollbar-thumb 
 {
     background: #555555;
@@ -52,10 +48,17 @@ body::-webkit-scrollbar-thumb
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    width: 30px;
+    height: 30px;
+    margin: .5rem;
+}
+
+body::-webkit-scrollbar:hover
+{
+    width: 10px;
 }
   
-  /* Handle on hover */
+  
+/* Handle on hover */
 body::-webkit-scrollbar-thumb:hover 
 {
 	background: #333333; 
@@ -129,10 +132,12 @@ body::-webkit-scrollbar-thumb:hover
 
 .access-form
 {
-    display: grid;
-    margin-top: 1rem;
+    display: block;
+    margin-top: 3.5rem;
     margin-bottom: 2rem;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .access-form-list
@@ -144,16 +149,38 @@ body::-webkit-scrollbar-thumb:hover
     text-align: center;
 }
 
-.access-form-item
-{
-    padding: .5rem 0;
-}
 
 .border-top-global
 {
     border-top: 1px solid #313131;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
+}
+
+.access-input
+{
+    background: rgba(240, 240, 240, 0.45);
+    border: 1px solid #cecece;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    font-size: 15px;
+}
+
+.access-input:focus
+{
+    outline: 3px solid rgba(0, 119, 255, 0.3);
+}
+
+.up-access-input
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.down-access-input
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .global-input-access
@@ -311,7 +338,7 @@ option
 {
     justify-content: center;
     text-align: center;
-    padding-top: 12rem;
+    padding-top: 9rem;
     color: #ffffff;
 }
 
@@ -643,26 +670,6 @@ option
     background: #30D158;
 }
 
-.cta-link-square-large-blue
-{
-    color: #ffffff;
-    font-size: 16.5px;
-    margin-bottom: .5rem;
-    transition: 0.5s;
-    cursor: pointer;
-    background: #007AFF;
-    border-radius: 5px;
-    letter-spacing: .009px;
-    padding: .5rem 5rem;
-    text-align: center;
-    border: none;
-    outline: none;
-}
-
-.cta-link-square-large-blue:hover
-{
-    background: #30D158;
-}
 
 .cta-link-outline-blue
 {
@@ -979,7 +986,29 @@ option
 
 .wrapper-intro-index
 {
-    background: url('/images/wrappers/shop.png');
+    background: url('/images/wrappers/intro-mul.gif') center no-repeat;
+    background-size: cover;
+    height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper-translucent-back
+{
+    backdrop-filter: blur(160px) opacity(100%);
+    -webkit-backdrop-filter: blur(160px) opacity(100%);
+    -moz-backdrop-filter: blur(160px) opacity(100%);
+    -o-backdrop-filter: blur(160px) opacity(100%);
+    -ms-backdrop-filter: blur(160px) opacity(100%);
+    background: rgba(240, 240, 240, 0.55);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
 /* WRAPPER INTRO ENDS */
@@ -1634,23 +1663,29 @@ option
 
 .tile-squared
 {
-    width: 60rem;
-    height: 42rem;
+    width: 50rem;
+    height: 45rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 65px;
     position: absolute;
     margin-top: 7rem;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 2rem;
+    background: #ffffff;
+    -webkit-border-radius: 65px;
+    -moz-border-radius: 65px;
+    -ms-border-radius: 65px;
+    -o-border-radius: 65px;
 }
 
 .icon-continental-index
 {
-    width: 80px;
+    width: 50px;
     max-height: 100%;
     max-width: 100%;
     pointer-events: none;
@@ -1661,33 +1696,35 @@ option
 
 /* HERO'S START */
 
-.hero
+.hero-auto
 {
-    height: 188rem;
+    background-size: cover;
     background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-}
-
-.hero-basic
-{
-    height: 62.5rem;
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-}
-
-.hero-auto-height
-{
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 /* HERO'S ENDS */
+
+@media (prefers-color-scheme: dark) 
+{
+    .access-input
+    {
+        background: rgba(48, 48, 48, 0.45);
+        border: 1px solid #333333;
+        color: #f0f0f0;
+    }
+
+    .wrapper-translucent-back
+    {
+        background: rgba(39, 39, 39, 0.75);
+    }
+
+    .tile-squared
+    {
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+}

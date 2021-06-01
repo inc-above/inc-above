@@ -68,14 +68,14 @@
 
 .profile-image-company-product
 {
-    width: 30px;
+    width: 40px;
     display: block;
     pointer-events: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
     margin-right: 1rem;
 }
 

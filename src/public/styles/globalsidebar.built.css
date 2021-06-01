@@ -76,6 +76,7 @@
     margin-bottom: 1rem;
 }
 
+
 .mulstore-icon-sidebar
 {
     background: url('/images/icons/sidebar/mulstore.svg') no-repeat center;
@@ -143,6 +144,13 @@
 { /* Microsoft Edge */
     color: #A0A0A0;
     margin-left: 1rem;
+}
+
+.sidebar-icon
+{
+    font-size: 21px;
+    color: #007AFF;
+    
 }
 
 .discover-icon

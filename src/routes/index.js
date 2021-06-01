@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('index', { title: '- Above'});
-});
-
 // SHOP DUNE
 
 router.get('/mx/discover', (req, res) => {
@@ -19,6 +15,10 @@ router.get('/mx/search', (req, res) => {
     res.render('mx/search', { title: 'Buscar'});
 });
 
+router.get('/mx/offers', (req, res) => {
+    res.render('mx/offers', { title: 'Ofertas'});
+});
+
 router.get('/mx/categories', (req, res) => {
     res.render('mx/categories', { title: 'Categorias'});
 });
@@ -27,10 +27,18 @@ router.get('/mx/arcade', (req, res) => {
     res.render('mx/arcade', { title: 'Arcade'});
 });
 
+router.get('/mx/saved', (req, res) => {
+    res.render('mx/saved', { title: 'Favoritos'});
+});
+
 // RECORDS 
 
-router.get('/mx/records', (req, res) => {
-    res.render('mx/records', { title: '(Records Name)'});
+router.get('/mx/p/record', (req, res) => {
+    res.render('mx/p/record', { title: '(Records Name)'});
+});
+
+router.get('/mx/p/gallery', (req, res) => {
+    res.render('mx/p/gallery', { title: '(Gallery Name)'});
 });
 
 // SHOP PRODUCTS 
@@ -103,6 +111,12 @@ router.get('/mx/suite/apple/store', (req, res) => {
 
 router.get('/mx/profile/lacoste', (req, res) => {
     res.render('mx/profile/lacoste', { title: 'Lacoste'});
+}); 
+
+// EVENT
+
+router.get('/mx/event', (req, res) => {
+    res.render('mx/event', { title: '(Event Name)'});
 }); 
 
 module.exports = router;

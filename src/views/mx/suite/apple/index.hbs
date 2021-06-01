@@ -64,9 +64,6 @@
                                     <div class="header-suite-initial-item">
                                         <a href="" class="cta-link-navbar-suite-initial">Music</a>
                                     </div>
-                                    <div class="header-suite-initial-item">
-                                        <a href="" class="cta-link-navbar-suite-initial">Eventos</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,116 +130,288 @@
                     var video = document.getElementById('videoPlayer'); video.control = false;
                 </script>
 
-                {{> shop/menus/segment-suite }}
-
-                <div class="records-suite">
-                    <div class="records-suite-container">
-                        <ul class="records-suite-list">
-                            <a onclick="openRecord()" class="records-suite-item">
-                                <img src="/videos/covers/imac-2021.jpg" alt="" class="image-records-cover">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            iMac 24"
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Dile hola a la nueva Mac
-                                        </h3>
-                                    </div>
+                <div class="suite-company-stats">
+                        <ul class="suite-company-stats-list">
+                            <li class="suite-company-stats-item">
+                                <ion-icon class="icon-value-suite-company" name="star"></ion-icon>
+                                <h3 class="titlesub-company-stats">0/5 Valoraciones</h3>
+                            </li>
+                            <li class="suite-company-stats-item">
+                                <h2 class="title1-company-stats gray-light-text">#0</h2>
+                                <h3 class="titlesub-company-stats">0 mejores compañias</h3>
+                            </li>
+                            <li class="suite-company-stats-item">
+                                <h2 class="title1-company-stats gray-light-text">0</h2>
+                                <h3 class="titlesub-company-stats">Seguidores</h3>
+                            </li>
+                            <li class="suite-company-stats-item">
+                                <div class="flag-country-suite-company">
+                                    <img src="/images/flags/north-america-caribe/us-flag.png" alt="flag" class="flag-image-country-suite-company">
                                 </div>
-                            </a>
-                            <a href="/mx/records" class="records-suite-item">
-                                <img src="/videos/covers/airtag.jpg" alt="" class="image-records-cover">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            AirTag
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Pierde la costumbre de perder las cosas
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                            <a onclick="openRecord()" class="records-suite-item">
-                                <img src="/videos/covers/iphone-12-purple.jpg" alt="" class="image-records-cover">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            iPhone 12 Purple
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Mmmmm, Morado
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="records-suite-item">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            Apple TV 4K
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Redefinimos la TV
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="records-suite-item">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            iPhone 12 Purple
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Mmmmm, Morado
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="" class="records-suite-item">
-                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
-                                <div class="records-bottom-description">
-                                    <div class="records-bottom-description-title">
-                                        <h2 class="titleup-records-bottom-description">
-                                            Apple
-                                        </h2>
-                                        <h2 class="title1-records-bottom-description">
-                                            iPhone 12 Purple
-                                        </h2>
-                                        <h3 class="title2-records-bottom-description">
-                                            Mmmmm, Morado
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
+                                <h3 class="titlesub-company-stats">De Estados Unidos</h3>
+                            </li>
+                            <li class="suite-company-stats-item">
+                                <ion-icon class="icon-web-suite-company" name="globe-outline"></ion-icon>
+                                <a href="https://apple.com/" class="titlesub-company-stats">Sitio Web</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
 
-                {{> shop/records }}
+                {{> shop/menus/segment-suite }}
 
+                <section class="hero-auto-height wrapper-none">
+
+                    <div class="row-suite-2">
+                        <a href="" class="row-suite-2-box">
+                            <img src="/images/wrappers/watch-series6.png" alt="" class="cover-image-row-suite-2">
+                            <div class="foot-row-suite-2-box">
+                                <ul class="foot-row-2-suite-box-list">
+                                    <li class="foot-row-2-suite-box-item">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-super-minus">
+                                                Watch Series 6
+                                            </h2>
+                                            <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                                Un futuro más saludable en tu muñeca.
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="" class="row-suite-2-box">
+                            <img src="/images/wrappers/apple-fitness.jpg" alt="" class="cover-image-row-suite-2">
+                            <div class="foot-row-suite-2-box">
+                                <ul class="foot-row-2-suite-box-list">
+                                    <li class="foot-row-2-suite-box-item">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-super-minus">
+                                                Apple Fitness +
+                                            </h2>
+                                            <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                                Una experiencia de fitness para todos, con la tecnología de Apple Watch.
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <a href="" class="wrap-suite">
+                        <img src="/images/wrappers/ipad-pro.png" alt="" class="cover-image-wrap-suite">
+                        <div class="foot-wrap-suite">
+                            <ul class="foot-wrap-suite-list">
+                                <li class="foot-wrap-suite-item">
+                                    <div class="title-left">
+                                        <h2 class="title-heading-super-minus">
+                                            iPad Pro
+                                        </h2>
+                                        <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                            Superpotente por el Apple M1 Chip
+                                        </h3> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <div class="row-suite-2">
+                        <a href="" class="row-suite-2-box">
+                            <img src="/images/wrappers/watch-series6.png" alt="" class="cover-image-row-suite-2">
+                            <div class="foot-row-suite-2-box">
+                                <ul class="foot-row-2-suite-box-list">
+                                    <li class="foot-row-2-suite-box-item">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-super-minus">
+                                                Watch Series 6
+                                            </h2>
+                                            <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                                Un futuro más saludable en tu muñeca.
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href="" class="row-suite-2-box">
+                            <img src="/images/wrappers/apple-fitness.jpg" alt="" class="cover-image-row-suite-2">
+                            <div class="foot-row-suite-2-box">
+                                <ul class="foot-row-2-suite-box-list">
+                                    <li class="foot-row-2-suite-box-item">
+                                        <div class="title-left">
+                                            <h2 class="title-heading-super-minus">
+                                                Apple Fitness +
+                                            </h2>
+                                            <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                                Una experiencia de fitness para todos, con la tecnología de Apple Watch.
+                                            </h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="headline-wrap">
+                        <ul class="headline-wrap-list">
+                            <li class="headline-wrap-item">
+                                <div class="title-left title-darker">
+                                    <h2 class="title-heading-extra-minus">
+                                        Acerca de Apple
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="description-company">
+                        <div class="title-left title-darker">
+                            <h3 class="title-sub-heading-extra-minus gray-light-text">
+                                Apple Inc. es una empresa estadounidense que diseña y produce equipos electrónicos, software y servicios en línea. Tiene su sede central en el Apple Park, en Cupertino y la sede europea en la ciudad de Cork. Sus productos de hardware incluyen el teléfono inteligente iPhone, la tableta iPad, el ordenador personal Mac, el reproductor de medios portátil iPod, el reloj inteligente Apple Watch y el reproductor de medios digitales Apple TV. Entre el software de Apple se encuentran los sistemas operativos iOS, iPadOS, macOS, watchOS y tvOS, el explorador de contenido multimedia iTunes, la suite iWork, Final Cut Pro X, Logic Pro, Xsan y el navegador web Safari.
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="headline-wrap">
+                        <ul class="headline-wrap-list">
+                            <li class="headline-wrap-item">
+                                <div class="title-left title-darker">
+                                    <h2 class="title-heading-extra-minus">
+                                        Directivos
+                                    </h2>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="leadership-company">
+                        <div class="leadership-company-container">
+                            <button class="cta-link-carousel-prev" id="cta-carousel-prev-leadership">
+                                <ion-icon name="chevron-back"></ion-icon>
+                            </button>
+
+                            <ul class="leadership-company-list" id="leadership-carousel">
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/tim-cook.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">
+                                        <h2 class="title-sub-heading-extra-minus">
+                                            Tim Cook
+                                        </h2>
+                                        <h3 class="title-sub-heading-super-minus gray-light-text">
+                                            CEO
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/katherine-adams.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">
+                                        <h2 class="title-sub-heading-extra-minus">
+                                            Katherine Adams
+                                        </h2>
+                                        <h3 class="title-sub-heading-super-minus gray-light-text">                     
+                                            Senior VP and General Counsel
+                                        </h3>  
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/eddy-cue.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h2 class="title-sub-heading-extra-minus">                  
+                                            Eddy Cue
+                                        </h2>
+                                        <h3 class="title-sub-heading-super-minus gray-light-text">                     
+                                            Senior VP, Internet Software and Services
+                                        </h3>  
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/craig-fed.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Craig Federighi
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/john-gian.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            John Giannandrea
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/greg-joz.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Greg “Joz” Joswiak
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/eddy-cue.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Sabih Khan
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/eddy-cue.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Luca Maestri
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/eddy-cue.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker">  
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Deirdre O’Brien
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="leadership-company-item">
+                                    <div class="profile-container-leadership">
+                                        <img src="/images/profile/eddy-cue.png" alt="" class="image-profile-leadership">
+                                    </div>
+                                    <div class="title-center title-darker"> 
+                                        <h3 class="title-sub-heading-extra-minus">
+                                            Johny Srouji
+                                        </h3> 
+                                        <h3 class="title-sub-heading-super-minus">                  
+                                            Johny Srouji
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="cta-link-carousel-next" id="cta-carousel-next-leadership">
+                                <ion-icon name="chevron-forward"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </section>
                 
 
                 

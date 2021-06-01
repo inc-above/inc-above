@@ -1,0 +1,193 @@
+    <style>
+        .current-menu-site-nav-publications
+        {
+            background: #ffffff;
+            border-radius: 10px;
+            color: #111111;
+        }
+
+        @media (prefers-color-scheme: dark) 
+        {
+            .current-menu-site-nav-publications
+            {
+                background: #444444;
+                border-radius: 10px;
+                color: #ffffff;
+            }
+        }
+    </style>
+
+
+    {{> shop/sheets/pay }}
+
+    {{> shop/menus/sidebar }}
+
+    {{> shop/menus/tabnav }}
+
+    <div class="main-global" id="mainFact">
+
+    <main class="main-page">
+        <div class="main-wrappers">   
+            <div class="container-wrap">
+
+                <div class="store-header">
+                    <div class="store-header-container">
+                        <ul class="store-header-list">
+                            <li class="store-header-item">
+                                <img src="/images/profile/apple.png" alt="" class="image-profile-store-header">
+                                <div class="title-left title-darker">
+                                    <h2 class="title1-store-header">Apple <span class="verified-store"> <ion-icon class="verified-check-store" name="checkmark-circle"></ion-icon> </span> </h2>
+                                </div>
+                            </li>
+                            <li class="store-header-item">
+                                <a href="" class="cta-link-rounded-white"> <ion-icon name="add" class="icon-cta-link"></ion-icon> Seguir</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="store-header">
+                    <div class="store-header-container">
+                        <ul class="store-header-list">
+                            <li class="store-header-item">  
+                                <a href="" class="cta-link-store-header">Mac</a>
+                            </li>
+                            <li class="store-header-item">
+                                <a href="" class="cta-link-store-header">iPad</a>
+                            </li>
+                            <li class="store-header-item">
+                                <a href="" class="cta-link-store-header">Watch</a>
+                            </li>
+                            <li class="store-header-item">
+                                <a href="" class="cta-link-store-header">TV</a>
+                            </li>
+                            <li class="store-header-item">
+                                <a href="" class="cta-link-store-header">Music</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>    
+
+                {{> shop/menus/segment-suite }}
+                
+                <div class="records-suite">
+                    <div class="records-suite-container">
+                        <ul class="records-suite-list">
+                            <a onclick="openRecord()" class="records-suite-item">
+                                <img src="/videos/covers/imac-2021.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iMac 24"
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Dile hola a la nueva Mac
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/mx/records" class="records-suite-item">
+                                <img src="/videos/covers/airtag.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            AirTag
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Pierde la costumbre de perder las cosas
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a onclick="openRecord()" class="records-suite-item">
+                                <img src="/videos/covers/iphone-12-purple.jpg" alt="" class="image-records-cover">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="/mx/p/gallery" class="records-suite-item">
+                                <img src="/images/wrappers/wwdc-2021.jpg" alt="" class="image-records-cover">
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                             WWDC21
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Unete a nosotros en la conferencia mundial de desarroladores, Junio 7-11
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="records-suite-item">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="records-suite-item">
+                                <span class="play-button-records"><ion-icon class="icon-play-records" name="play"></ion-icon></span>
+                                <div class="records-bottom-description">
+                                    <div class="records-bottom-description-title">
+                                        <h2 class="titleup-records-bottom-description">
+                                            Apple
+                                        </h2>
+                                        <h2 class="title1-records-bottom-description">
+                                            iPhone 12 Purple
+                                        </h2>
+                                        <h3 class="title2-records-bottom-description">
+                                            Mmmmm, Morado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>   
+    </div>
+
+    {{> shop/sheets/publication }}        
+
+    <script>
+        window.addEventListener('scroll', function () {
+            let segmentSuitenav = document.getElementById('segmentSuite');
+            let windowPosition = window.scrollY > 100;
+            segmentSuitenav.classList.toggle('segment-suite-nav-active', windowPosition);
+        });
+    </script> 

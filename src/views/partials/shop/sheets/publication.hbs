@@ -1,0 +1,65 @@
+<div class="sheet-background" id="sheetBackground">
+    <div class="sheet sheet-medium" id="publicationSheet">
+        <div class="sheet-head sheet-head-medium">
+            
+            <img src="/images/wrappers/wwdc-2021.jpg" alt="" class="cover-image-sheet-head">
+            <div class="sheet-head-header">
+                <ul class="sheet-head-header-list">
+                    <li class="sheet-head-header-item">
+                        <div class="title-left">
+                            <h2 class="title-heading-extra-minus">
+                                 WWDC21 
+                            </h2>
+                        </div>
+                    </li>
+                    <li class="sheet-head-header-item">
+                        <div onclick="closePublicationsheet()" class="cta-close-sheet-circle"><ion-icon style="margin-bottom: -.3rem;" name="close"></ion-icon></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sheet-head-foot">
+                <ul class="sheet-head-foot-list">
+                    <li class="sheet-head-foot-item">
+                        <div class="title-left">
+                            <h2 class="title-heading-extra-minus">
+                                Y lejos codificamos.
+                            </h2>
+                            <h2 class="title-sub-heading-extra-minus gray-light-text">
+                                Conferencia Mundial de Desarrolladores de Apple, del 7 al 11 de junio <br>
+
+                                Aquí está el programa. Únase a nosotros el 7 de junio a las 10 a.m. PDT como WWDC21 despega con una experiencia totalmente en línea y millones de los desarrolladores más talentosos del mundo.
+                            </h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="sheet-container">
+            <div class="sheet-body">
+                <img src="/images/wrappers/wwdc21.png" alt="" class="image-sheet-body">
+            </div>
+            <div class="sheet-foot">
+                <ul class="sheet-foot-list">
+                    <li class="sheet-foot-item">
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openPublicationsheet() {
+        document.getElementById("publicationSheet").style.display = "block";
+        document.getElementById("sheetBackground").style.display = "block";
+        document.getElementById("bodyFact").style.overflow = "hidden";
+    }
+
+    function closePublicationsheet() {
+        document.getElementById("publicationSheet").style.display = "none";
+        document.getElementById("sheetBackground").style.display = "none";
+        document.getElementById("bodyFact").style.overflow = "auto";
+    }
+</script>
